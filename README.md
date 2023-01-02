@@ -1,3 +1,3 @@
-# jonisuojanen.github.io
-#Joni Suojanen
-##Game Designer
+# Build settings
+markdown:kramdown
+remote_theme: benbalter/retlab

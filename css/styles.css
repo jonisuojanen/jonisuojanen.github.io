@@ -1,0 +1,191 @@
+
+/* HEADER */
+
+
+h1
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:lighter;
+    font-style:normal;
+    font-size: 60pt;
+    
+    
+    
+}
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40pt;
+    font-weight: lighter;
+    font-style: normal;
+    text-transform: uppercase;
+
+}
+h3{
+    font-size: 20pt;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    padding: 20px;
+    margin-left: 1%;
+}
+
+p {
+    padding: 20px;
+    font-size: 16pt;
+}
+
+
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.4em;
+color: rgb(3, 1, 22);
+background-color: aliceblue;
+
+}
+
+.header 
+{
+
+    padding: 60px;
+    min-height: calc(100vw-100px);
+    text-align: left;
+    background: #253551;
+    color: white;
+    font-size: 30px;
+}
+
+/* NAV BAR */
+
+/* Add a black background color to the top navigation */
+.topnav
+{
+background-color: rgb(51, 51, 51);
+min-height: calc(100vh-100px);
+overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+float: right;
+color: #f2f2f2;
+text-align: right;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 16px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+background-color: #080b27;
+color: white;
+}
+
+
+
+
+#one
+{
+    background-color: rgba(0,0,0,0.25);
+}
+
+
+
+/* About */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: left;
+    background-color: #474e5d;
+    color: white;
+}
+
+.block
+{
+    display: block;
+}
+
+.container 
+{
+    padding: 16px;
+}
+
+
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    height: 5vh;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+        
+    }
+
+
+}
+
+.photo
+{
+    
+    padding: 3vw;
+    width: 30vw;
+    height: 50vh;
+}
+
+

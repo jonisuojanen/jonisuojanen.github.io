@@ -39,6 +39,7 @@ p {
 
 
 
+
 body {
 font-family: Arial, Helvetica, sans-serif;
 line-height: 1.4em;
@@ -47,10 +48,21 @@ background-color: aliceblue;
 
 }
 
+.centered
+{
+    text-align: center;
+}
+
+/* For next to objects */
+.flex
+{
+    display: flex;
+}
+
 .header 
 {
 
-    padding: 60px;
+    padding: 30px;
     min-height: calc(100vw-100px);
     text-align: left;
     background: #253551;
@@ -186,6 +198,13 @@ html {
     padding: 3vw;
     width: 30vw;
     height: 50vh;
+}
+
+.portrait
+{
+    width: 100%;
+    height: 100%;
+
 }
 
 

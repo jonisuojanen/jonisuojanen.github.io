@@ -107,7 +107,7 @@ background-color: aliceblue;
     padding: 2%;
     box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
     min-height: calc(10vh-100px);
-    height: 50vh;
+    height: 70vh;
 
 }
 
@@ -149,6 +149,11 @@ background-color: aliceblue;
 .block
 {
     display: block;
+}
+
+.alignright
+{
+    text-align: left;
 }
 
 
@@ -197,16 +202,6 @@ background-color: aliceblue;
     height: 50vh;
 }
 
-.projectpicture
-{
-    
-    color: red;
-    max-width: 30px;
-    max-height: 30px;
-    object-fit:cover;
-    width:30em;
-    height: 100%; 
-}
 
 .portrait
 {
@@ -244,3 +239,24 @@ background-color: aliceblue;
          width: 100%;
      }
  }
+
+ .container {
+    display: flex;
+    align-items: center;
+justify-content: center
+    
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .image {
+    
+    margin: auto;
+    text-align: center;
+
+    width: 100%;
+    height: 500px;
+    flex-basis: 80%;
+  }

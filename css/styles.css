@@ -7,21 +7,21 @@ h1
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight:lighter;
     font-style:normal;
-    font-size: 60pt;
+    font-size: 3vw;
     
     
     
 }
 h2 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 40pt;
+    font-size: 2vw;
     font-weight: lighter;
     font-style: normal;
     text-transform: uppercase;
 
 }
 h3{
-    font-size: 20pt;
+    font-size: 1vw;
 }
 
 h1,
@@ -30,15 +30,25 @@ h3,
 h4 {
     padding: 20px;
     margin-left: 1%;
+    line-height: 1;
 }
 
-p {
-    padding: 20px;
-    font-size: 16pt;
+p
+{
+    padding-left: 20px;
+    font-size: 2vw;
+}
+
+ul
+{
+    padding-left: 2vw;
+    font-size: 1vw;
 }
 
 
-
+html {
+    box-sizing: border-box;
+}
 
 body {
 font-family: Arial, Helvetica, sans-serif;
@@ -48,19 +58,8 @@ background-color: aliceblue;
 
 }
 
-.centered
-{
-    text-align: center;
-}
 
-/* For next to objects */
-.flex
-{
-    display: flex;
-}
-
-.header 
-{
+.header {
 
     padding: 30px;
     min-height: calc(100vw-100px);
@@ -73,49 +72,53 @@ background-color: aliceblue;
 /* NAV BAR */
 
 /* Add a black background color to the top navigation */
-.topnav
-{
-background-color: rgb(51, 51, 51);
-min-height: calc(100vh-100px);
-overflow: hidden;
+.topnav {
+    background-color: rgb(51, 51, 51);
+    min-height: calc(100vh-100px);
+    overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-float: right;
-color: #f2f2f2;
-text-align: right;
-padding: 14px 16px;
-text-decoration: none;
-font-size: 16px;
+    float: right;
+    color: #f2f2f2;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-background-color: #ddd;
-color: black;
+    background-color: #ddd;
+    color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-background-color: #080b27;
-color: white;
+    background-color: #080b27;
+    color: white;
 }
 
 
 
+.projectcard {
 
-#one
+    padding: 2%;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+    min-height: calc(10vh-100px);
+    height: 50vh;
+
+}
+
+.centered
 {
-    background-color: rgba(0,0,0,0.25);
+    text-align: center;
 }
-
 
 
 /* About */
-html {
-    box-sizing: border-box;
-}
+
 
 *,
 *:before,
@@ -123,20 +126,21 @@ html {
     box-sizing: inherit;
 }
 
-.column {
+/* .column {
+    color: red;
     float: left;
-    width: 33.3%;
+    width: 25%;
     margin-bottom: 16px;
     padding: 0 8px;
-}
+} */
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 8px;
 }
 
+
 .about-section {
-    padding: 50px;
     text-align: left;
     background-color: #474e5d;
     color: white;
@@ -147,11 +151,13 @@ html {
     display: block;
 }
 
-.container 
-{
-    padding: 16px;
-}
 
+.points
+{
+    padding-left: 25px;
+    text-align: left;
+    line-height: 2;
+}
 
 
 .container::after,
@@ -182,22 +188,24 @@ html {
     background-color: #555;
 }
 
-@media screen and (max-width: 650px) {
-    .column {
-        width: 100%;
-        display: block;
-        
-    }
-
-
-}
-
+/* IMAGES */
 .photo
 {
     
     padding: 3vw;
-    width: 30vw;
+    width: 100%;
     height: 50vh;
+}
+
+.projectpicture
+{
+    
+    color: red;
+    max-width: 30px;
+    max-height: 30px;
+    object-fit:cover;
+    width:30em;
+    height: 100%; 
 }
 
 .portrait
@@ -208,3 +216,31 @@ html {
 }
 
 
+/* NEW   */
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    
+    float: left;
+    width: 33.3%;
+}
+
+ /* Responsive layout - makes a two column-layout instead of four columns */
+ @media screen and (max-width: 900px) {
+     .column {
+         width: 50%;
+     }
+ }
+
+ /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 600px) {
+     .column {
+         width: 100%;
+     }
+ }

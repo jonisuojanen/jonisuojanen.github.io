@@ -36,7 +36,7 @@ h4 {
 p
 {
     padding-left: 20px;
-    font-size: 2vw;
+    font-size: 14pt;
 }
 
 ul
@@ -314,4 +314,30 @@ justify-content: center
     margin: 1px;
 
     width: 100%
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }

@@ -151,26 +151,17 @@ background-color: aliceblue;
     display: block;
 }
 
-.alignright
-{
-    text-align: left;
-}
+
 
 
 .points
 {
-    padding-left: 25px;
+    float: left;
     text-align: left;
     line-height: 2;
 }
 
 
-.container::after,
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
 
 .title {
     color: grey;
@@ -241,14 +232,24 @@ background-color: aliceblue;
  }
 
  .container {
-    display: flex;
+
     align-items: center;
 justify-content: center
     
   }
+
+  .container::after,.row::after 
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
   
   img {
     max-width: 100%;
+
+    
   }
   
   .image {
@@ -260,3 +261,33 @@ justify-content: center
     height: 500px;
     flex-basis: 80%;
   }
+
+.projectimage
+{
+    display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+}
+
+
+.img1 {
+    float: right;
+    max-width: 60%;
+    height: auto;
+}
+
+.left
+{
+    float: left;
+    text-align: center;
+        width: 500px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+        padding: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

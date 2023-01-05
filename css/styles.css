@@ -58,6 +58,10 @@ background-color: aliceblue;
 
 }
 
+.description
+{
+    line-height: 1.5;
+}
 
 .header {
 
@@ -104,11 +108,8 @@ background-color: aliceblue;
 
 .projectcard {
 
-    padding: 2%;
-    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
-    min-height: calc(10vh-100px);
-    height: 70vh;
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
 }
 
 .centered

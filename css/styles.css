@@ -37,7 +37,7 @@ h4 {
 p
 {
     padding-left: 20px;
-    font-size: 14pt;
+    font-size: 1em;
 }
 
 ul
@@ -95,13 +95,13 @@ background-color: aliceblue;
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #3c6e85;
     color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #080b27;
+    background-color: #3c6e85;
     color: white;
 }
 
@@ -139,6 +139,8 @@ background-color: aliceblue;
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 8px;
+    padding: 3%;
+
 }
 
 
@@ -173,17 +175,17 @@ background-color: aliceblue;
     border: none;
     outline: 0;
     display: inline-block;
-    padding: 8px;
+    padding: 2%;
     color: white;
-    background-color: #000;
+    background-color: #253551;
     text-align: center;
     cursor: pointer;
-    width: 100%;
+    width: 50%;
     height: 5vh;
 }
 
 .button:hover {
-    background-color: #555;
+    background-color: #3c6e85;
 }
 
 
@@ -197,12 +199,13 @@ background-color: aliceblue;
 .content 
 {
     background-color: white;
+    
     padding: 10px;
 }
 
 /* Create four equal columns that floats next to each other */
 .column {
-    
+    display: flexbox;
     float: left;
     width: 33.3%;
 }
@@ -224,7 +227,9 @@ background-color: aliceblue;
  .container {
 
     align-items: center;
-justify-content: center
+    justify-content: center;
+    height: auto;
+
     
   }
 
@@ -233,6 +238,7 @@ justify-content: center
     content: "";
     clear: both;
     display: table;
+    
 }
 
   
@@ -249,7 +255,7 @@ justify-content: center
 
 .portrait {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
   img {
@@ -295,8 +301,11 @@ justify-content: center
 .img3 {
 
     max-width: 100%;
-    height: 300px;
+    max-height: 300px;
     padding: 20px;
+    display: flexbox;
+    position:static;
+
 }
 
 .left {
@@ -315,6 +324,7 @@ justify-content: center
 
 .flex {
     display: flex;
+    justify-content:space-evenly;
 }
 
 .grid {

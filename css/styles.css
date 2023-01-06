@@ -22,7 +22,7 @@ h2 {
 
 }
 h3{
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
 h1,
@@ -37,7 +37,7 @@ h4 {
 p
 {
     padding-left: 20px;
-    font-size: 1em;
+    font-size: 1vw;
 }
 
 ul
@@ -61,10 +61,31 @@ background-color: aliceblue;
 
 .description
 {
+    
     line-height: 1.5;
 }
 
+
+
+/* Icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+/* Header */
+
 .header {
+
 
     padding: 30px;
     min-height: calc(100vw-100px);
@@ -360,4 +381,9 @@ background-color: aliceblue;
     content: "";
     display: table;
     clear: both;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
 }

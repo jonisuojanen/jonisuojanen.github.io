@@ -6,24 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Great Escape</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <!-- Header -->
-    <div class="header">
-        <div>
-            <h1>Joni Suojanen</h1>
-            <h2>Game Designer</h2>
-        </div>
-    
-    </div>
-    
-    <!-- List Navigations -->
-    <div class="topnav">
-        <a href="./docs/Joni Suojanen_Resume.pdf" target="_blank">Resume</a>
-        <a href="about.html">About</a>
-        <a class="active" href="./index.html">Home</a>
-    </div>
+<div class="header">
+  <h1>Joni Suojanen</h1>
+  <h2>Game Designer</h2>
+</div>
+
+<div class="topnav" id="myTopnav">
+  <a href="/index.html" class="active">Home</a>
+  <a href="about.html">About</a>
+  <a href="./docs/Joni Suojanen_Resume.pdf" target="_blank"> Resume</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+
+</div>
 
 
 
@@ -104,7 +116,7 @@
 
         <div class="img1">
             <img src="./images/Great Escape/Scale.png" alt=" Scale">
-            <label class="centered">Working with a big touch wall meant taking into account players height and reach space. Illustrating it using rule of thirds gave a better understanding of collectable placements in the game.</label>
+            <p class="centered">Working with a big touch wall meant taking into account players height and reach space. Illustrating it using rule of thirds gave a better understanding of collectable placements in the game.</p>
 </div>
 
     </div>
@@ -122,13 +134,13 @@
   <tbody>
     <tr class="img3">
       <th width="774" scope="col"><img src="images/Great Escape/joni-suojanen-storage - Graybox.jpg" alt=""/>
-        <label>A graybox of a storage room. Intended mood was a dusty and abandoned room wit old abandoned furniture. The goal of the room ws have small tier loot for players, with little challenge and reward.</label>      </th>
+        <p>A graybox of a storage room. Intended mood was a dusty and abandoned room wit old abandoned furniture. The goal of the room ws have small tier loot for players, with little challenge and reward.</p>      </th>
       <th width="770" scope="col"><img src="images/Great Escape/Market.png" alt="" align="baseline"/>
-        <label>Final version of the room.</label></th>
+        <p>Final version of the room.</p></th>
     </tr>
     <tr>
       <th scope="row"> <img src="images/Great Escape/Layout.png" alt="" width="785"/>
-        <label>Different layout option of rooms</label></th>
+        <p>Different layout option of rooms</p></th>
       <td>&nbsp;</td>
     </tr>
   </tbody>

@@ -6,23 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slippy Slope</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <!-- Header -->
-    <div class="header">
-        <div>
-          <h1>Joni Suojanen</h1>
-            <h2>Game Designer</h2>
-        </div>
-    
-    </div>
-    
-    <!-- List Navigations -->
-    <div class="topnav">
-        <a href="./docs/Joni Suojanen_Resume.pdf" target="_blank">Resume</a>
-        <a href="about.html">About</a>
-        <a class="active" href="./index.html">Home</a>
-    </div>
+<!-- Header -->
+<div class="header">
+    <h1>Joni Suojanen</h1>
+    <h2>Game Designer</h2>
+</div>
+
+<div class="topnav" id="myTopnav">
+    <a href="/index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="./docs/Joni Suojanen_Resume.pdf" target="_blank"> Resume</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+</div>
 
 
 
@@ -38,7 +50,7 @@
 
     <br>
 
-    <iframe width="70%" height="700vh" src="https://youtube.com/embed/aeT2wi9Vndg" frameborder="0"
+    <iframe width="1500vw" height="1000vh" src="https://youtube.com/embed/aeT2wi9Vndg" frameborder="0"
         allowfullscreen></iframe>
 </div>
 </div>
@@ -70,7 +82,7 @@
             
             <div class="img1">
                 <img src="./images/Slippy Slope/Framework.png" alt="Framework">
-                <label>Game framework documentation</label>
+                <p>Game framework documentation</p>
 </div>
             
     </div>
@@ -171,6 +183,10 @@
 <br>
     <br>
 <!-- Case Closed -->
+
+<br><br><br>
+
+<a href="./Project2.html" target="_blank" class="button">Wizard Defense</a>
 
 
 </body>

@@ -8,6 +8,7 @@ h1
     font-weight:lighter;
     font-style:normal;
     font-size: 3vw;
+    text-transform: capitalize;
     
     
     
@@ -185,28 +186,16 @@ background-color: aliceblue;
     background-color: #555;
 }
 
-/* IMAGES */
-.photo
-{
-    
-    padding: 3vw;
-    width: 100%;
-    height: 50vh;
-}
 
 
-.portrait
-{
-    width: 100%;
-    height: 100%;
 
-}
 
 
 /* NEW   */
 
 /* Content */
-.content {
+.content 
+{
     background-color: white;
     padding: 10px;
 }
@@ -247,6 +236,22 @@ justify-content: center
 }
 
   
+
+/* Images------------------------------- */
+
+
+.photo {
+    padding: 3vw;
+    width: 100%;
+    height: 50vh;
+}
+
+
+.portrait {
+    width: 100%;
+    height: 100%;
+}
+
   img {
     max-width: 100%;
     max-height: 800px;
@@ -275,7 +280,7 @@ justify-content: center
 
 .img1 {
     float: right;
-    max-width: 70%;
+    max-width: 60%;
     height: auto;
     padding: 20px;
 }
@@ -317,6 +322,9 @@ justify-content: center
 
     width: 100%
 }
+
+
+/* Responsiveness */
 
 .responsive {
     padding: 0 6px;

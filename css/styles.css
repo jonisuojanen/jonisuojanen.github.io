@@ -32,8 +32,8 @@ h1,
 h2,
 h3,
 h4 {
-    padding: 20px;
-    margin-left: 1%;
+
+
     line-height: 1;
 }
 
@@ -63,7 +63,9 @@ font-family: 'Karla', sans-serif;
 font-weight:600;
 line-height: 1.4em;
 color: rgb(3, 1, 22);
-    background-color: #F8EDE3;
+background-color: #F8EDE3;
+    
+
 
 }
 
@@ -200,16 +202,7 @@ overflow: hidden;
 
 }
 
-
-/* PROJECT CARDS.......................................... */
-
-
-
-.projectcard {
-
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 8px;
-}
+/* Alignments */
 
 .centered
 {
@@ -244,6 +237,7 @@ overflow: hidden;
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff5ec;
     margin: 8px;
     padding: 3%;
 

@@ -1,28 +1,30 @@
 
-/* HEADER */
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600;800&display=swap');
 
 
 h1
 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight:lighter;
+    font-family: 'Karla', sans-serif;
+    font-weight:bold;
     font-style:normal;
     font-size: 2em;
     text-transform: capitalize;
     
     
+
     
 }
 h2 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 1.4em;
-    font-weight: lighter;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.7em;
+    font-weight:bold;
     font-style: normal;
     text-transform: uppercase;
 
 }
 h3{
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 h1,
@@ -37,7 +39,7 @@ h4 {
 p
 {
     padding-left: 20px;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 ul
@@ -55,7 +57,8 @@ html {
 
 
 body {
-font-family: Arial, Helvetica, sans-serif;
+font-family: 'Karla', sans-serif;
+font-weight:600;
 line-height: 1.4em;
 color: rgb(3, 1, 22);
 background-color: aliceblue;
@@ -276,6 +279,7 @@ overflow: hidden;
 
 .button:hover {
     background-color: #3c6e85;
+        transform: scale(1.1);
 }
 
 
@@ -495,4 +499,20 @@ overflow: hidden;
         flex: 100%;
         align-self: center;
     }
+}
+
+
+/* Accessablity */
+.zoom {
+
+
+    transition: transform .2s;
+    /* Animation */
+
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }

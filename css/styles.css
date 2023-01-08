@@ -111,6 +111,12 @@ p
     font-size: 1.25em;
 }
 
+ul{
+    height: 0%;
+    flex-grow: 1;
+    padding: 5%;
+}
+
 
 
 html {
@@ -245,7 +251,7 @@ overflow: hidden;
         display: block;
         size: 3em;
     }
-    
+
             .hero-text {
     
                 top: 50%;

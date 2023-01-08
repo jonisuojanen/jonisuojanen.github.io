@@ -250,7 +250,7 @@ overflow: hidden;
     .topnav a.icon {
         float: left;
         display: block;
-        size: 3em;
+        size: 5em;
     }
 
     .hero-text
@@ -265,7 +265,7 @@ overflow: hidden;
             font-family: 'Karla', sans-serif;
             font-weight: bold;
             font-style: normal;
-            font-size: 5vw;
+            font-size: 7vw;
             text-transform: capitalize;
     
     
@@ -275,7 +275,7 @@ overflow: hidden;
     
         h2 {
             font-family: 'Karla', sans-serif;
-            font-size: 3vw;
+            font-size: 5vw;
             font-weight: bold;
             font-style: normal;
             text-transform: uppercase;
@@ -283,18 +283,18 @@ overflow: hidden;
         }
     
         h3 {
-            font-size: 2vw;
+            font-size: 4vw;
         }
     
     
     
         p {
             padding-left: 10px;
-            font-size: 2vw;
+            font-size: 3vw;
         }
     
         ul {
-            font-size: 2vw;
+            font-size: 3vw;
             padding: 5%;
         }
 

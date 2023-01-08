@@ -71,7 +71,7 @@
 [class*="col-"] {
     float: left;
     padding: 15px;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 .row::after {
     content: "";
@@ -105,7 +105,7 @@ h3{
 
 
 
-p,li
+p
 {
     padding-left: 20px;
     font-size: 1.25em;
@@ -342,7 +342,7 @@ overflow: hidden;
     background-color: #85586F;
     text-align: center;
     cursor: pointer;
-    width: 7em;
+    width: 6em;
     height: auto;
     font-size: 1.5em;
     text-align: center;
@@ -435,7 +435,7 @@ overflow: hidden;
 
   img {
     max-width: 100%;
-    max-height: 800px;
+    max-height: 400px;
 
     
   }
@@ -567,6 +567,20 @@ overflow: hidden;
 }
 
 .zoom:hover {
+    transform: scale(1.5);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.zoom2 {
+
+
+    transition: transform .2s;
+    /* Animation */
+
+    margin: 0 auto;
+}
+
+.zoom2:hover {
     transform: scale(1.1);
     /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }

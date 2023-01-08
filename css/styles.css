@@ -164,6 +164,8 @@ html {
     color: white;
 }
 
+
+
 .description
 {
     
@@ -243,6 +245,11 @@ overflow: hidden;
         display: block;
         size: 3em;
     }
+    
+            .hero-text {
+    
+                top: 50%;
+            }
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -452,10 +459,9 @@ overflow: hidden;
 
 .projectimage
 {
-    display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
+object-fit: cover;
+    width: 100%;
+    max-height: 100%;
 }
 
 

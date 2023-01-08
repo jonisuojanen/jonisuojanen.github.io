@@ -84,7 +84,7 @@ h1
     font-family: 'Karla', sans-serif;
     font-weight:bold;
     font-style:normal;
-    font-size: 4em;
+    font-size: 3em;
     text-transform: capitalize;
     
     
@@ -161,7 +161,7 @@ html {
 
 /* Place text in the middle of the image */
 .hero-text {
-    font-size: 0.75em;
+
     text-align: right;
     position: absolute;
     top: 75%;

@@ -253,6 +253,51 @@ overflow: hidden;
         size: 3em;
     }
 
+    .hero-text
+    {
+            text-align: right;
+                position: absolute;
+                top: 70%;
+                left: 50%;
+    }
+
+        h1 {
+            font-family: 'Karla', sans-serif;
+            font-weight: bold;
+            font-style: normal;
+            font-size: 5vw;
+            text-transform: capitalize;
+    
+    
+    
+    
+        }
+    
+        h2 {
+            font-family: 'Karla', sans-serif;
+            font-size: 3vw;
+            font-weight: bold;
+            font-style: normal;
+            text-transform: uppercase;
+    
+        }
+    
+        h3 {
+            font-size: 2vw;
+        }
+    
+    
+    
+        p {
+            padding-left: 10px;
+            font-size: 2vw;
+        }
+    
+        ul {
+            font-size: 2vw;
+            padding: 5%;
+        }
+
 
 }
 

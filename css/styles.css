@@ -111,9 +111,9 @@ p
     font-size: 1.25vw;
 }
 
-ul{
-    height: 0%;
-    flex-grow: 1;
+ul
+{
+
     padding: 5%;
 }
 
@@ -242,7 +242,8 @@ overflow: hidden;
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {
+    .topnav a:not(:first-child)
+    {
         display: none;
     }
 
@@ -250,6 +251,11 @@ overflow: hidden;
         float: left;
         display: block;
         size: 3em;
+    }
+    ul
+    {
+        font-size: 1vw;
+        padding: 10%;
     }
 
 

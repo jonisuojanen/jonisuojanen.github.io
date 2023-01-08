@@ -84,7 +84,7 @@ h1
     font-family: 'Karla', sans-serif;
     font-weight:bold;
     font-style:normal;
-    font-size: 3em;
+    font-size: 3vw;
     text-transform: capitalize;
     
     
@@ -93,14 +93,14 @@ h1
 }
 h2 {
     font-family: 'Karla', sans-serif;
-    font-size: 1.7em;
+    font-size: 1.7vw;
     font-weight:bold;
     font-style: normal;
     text-transform: uppercase;
 
 }
 h3{
-    font-size: 1.5em;
+    font-size: 1.5vw;
 }
 
 
@@ -108,7 +108,7 @@ h3{
 p
 {
     padding-left: 20px;
-    font-size: 1.25em;
+    font-size: 1.25vw;
 }
 
 ul{
@@ -121,7 +121,7 @@ ul{
 
 html {
     box-sizing: border-box;
-    padding-bottom: 5em ;
+    padding-bottom: 5vw ;
 
 }
 
@@ -252,10 +252,7 @@ overflow: hidden;
         size: 3em;
     }
 
-            .hero-text {
-    
-                top: 50%;
-            }
+
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */

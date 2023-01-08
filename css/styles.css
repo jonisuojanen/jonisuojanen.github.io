@@ -287,7 +287,7 @@ overflow: hidden;
 .left {
     float: left;
     text-align: center;
-    width: 500px;
+
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
     padding: 10px;
 }

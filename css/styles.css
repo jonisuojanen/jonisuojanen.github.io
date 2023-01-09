@@ -69,7 +69,7 @@
 [class*="col-"] {
     float: left;
     padding: 15px;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 .row::after {
     content: "";
@@ -498,15 +498,8 @@ object-fit: cover;
 
 
 
-@media screen and (min-width: 1001px)
-{
-	.button {
 
-    width: 6em;
-    height: auto;
-    font-size: 2em;
-}
-}
+
 
 	
 	 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -526,16 +519,29 @@ object-fit: cover;
 	
 	.button {
 
-    width: 4.5em;
+    width: 5em;
     height: auto;
-    font-size: 2em
+    font-size: 1.5em
 
 	
+}
+
+.flex
+{
+    display: flex;
+}
+.container
+{
+    align-self: center;
+    width: 200%;
 }
 
 .column
 {
     width: 50%;
+}
+.col-6{
+    width: 100%;
 }
 }
 
@@ -696,6 +702,11 @@ object-fit: cover;
         .container
         {
             width: 70vw;
+        }
+        .flex
+        {
+                    display: block;
+                    justify-content:space-evenly;
         }
 
 

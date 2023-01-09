@@ -521,7 +521,7 @@ object-fit: cover;
 
     width: 5em;
     height: auto;
-    font-size: 1.5em
+    font-size: 1.5em;
 
 	
 }
@@ -530,19 +530,15 @@ object-fit: cover;
 {
     display: flex;
 }
-.container
+
+
+p
 {
-    align-self: center;
-    width: 200%;
+    font-size: 2vw;
 }
 
-.column
-{
-    width: 50%;
-}
-.col-6{
-    width: 100%;
-}
+
+
 }
 
 
@@ -699,10 +695,7 @@ object-fit: cover;
             width: 50%;
         }
 
-        .container
-        {
-            width: 70vw;
-        }
+
         .flex
         {
                     display: block;

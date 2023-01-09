@@ -69,7 +69,7 @@
 [class*="col-"] {
     float: left;
     padding: 15px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .row::after {
     content: "";
@@ -521,7 +521,7 @@ object-fit: cover;
 
     width: 5em;
     height: auto;
-    font-size: 1.5em;
+    font-size: 1.1em;
 
 	
 }
@@ -531,7 +531,9 @@ object-fit: cover;
     display: flex;
 }
 
-
+.hero-image {
+    height: 50%;
+}
 p
 {
     font-size: 2vw;
@@ -548,7 +550,7 @@ p
  @media only screen and (max-width:700px) {
     .responsive {
             width: 100%;
-            margin: 6px 0;
+
             font-size: 1.5vw;
         }
 
@@ -557,26 +559,18 @@ p
 }
 
                 .button {
-        
+                    
                     width: 5em;
                     height: auto;
-                    font-size: 2.5vw;
+                    font-size: 2vw;
                 }
-                .column{
-                    width: 120%;
-                }
-        
-                .col-6 {
-                    width: 100%;
-                }
-                .col-3{
-                    width: 50%;
-                }
-                .container
+
+                .flex
                 {
-                                        box-shadow: none;
-                    width: 200%;
+                    display: block;
                 }
+
+                
                 .left
                 {
                     box-shadow: none;
@@ -589,6 +583,7 @@ p
 
 
 }
+
 
 
 
@@ -691,15 +686,16 @@ p
         
         width: 100%;
     }
-        .column {
-            width: 50%;
-        }
+    .container
+    {
+        width: 100%;
+    }
 
 
         .flex
         {
-                    display: block;
-                    justify-content:space-evenly;
+         display: block;
+         justify-content:space-evenly;
         }
 
 
@@ -708,10 +704,27 @@ p
         font-size: 3vw;
     }
 
+
     .button{
         width: 40vw;
         height: auto;
         font-size: 7vw;
+    }
+}
+
+@media only screen and (max-width:400px)
+{
+    .responsive
+    {
+        width: 100%;
+    }
+    .column
+    {
+        width: 100%;
+    }
+    .container
+    {
+        width: 100%;
     }
 }
 

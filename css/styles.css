@@ -87,8 +87,13 @@ h1
     
     margin: 60px 0 0 0;
 
-    
+
 }
+
+        #top h1 {
+            margin: 12px 0 14 px 0;
+            /* arvot kellonsuuntaisesti: ylös oikea alas vasen */
+        }
 h2 {
     font-family: 'Karla', sans-serif;
     font-size: 2.5vw;
@@ -106,6 +111,9 @@ h2+p {
 
 h3{
     font-size: 2vw;
+    
+        margin: 12px 0 14 px 0;
+        /* arvot kellonsuuntaisesti: ylös oikea alas vasen */
 }
 
 
@@ -115,6 +123,10 @@ p
 
     font-size: 1.5vw;
 }
+
+
+
+#top p {margin-bottom: 13px;}
 
 ul
 {
@@ -156,7 +168,7 @@ html {
     background-image: linear-gradient(rgba(255, 193, 231, 0.301), rgba(36, 3, 3, 0.5)), url("../images/Test.jpeg");
 
     /* Set a specific height */
-    height: 50%;
+    height: 30vh;
 
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
@@ -170,7 +182,7 @@ html {
 
     text-align: right;
     position: absolute;
-    top: 50%;
+    top: 15vh;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -527,7 +539,7 @@ object-fit: cover;
      }
 
       .hero-image	{
-	height: 25%;
+	height: 25vh;
 					}
  }
 	
@@ -550,7 +562,7 @@ object-fit: cover;
 }
 
 .hero-image {
-    height: 50%;
+    height: 30vh;
 }
 p
 {
@@ -573,7 +585,7 @@ p
         }
 
 .hero-image {
-    height: 50%;
+    height: 50vh;
 }
 
                 .button {
@@ -613,6 +625,11 @@ p
         display: none;
     }
 
+    .topnav a
+    {
+        font-size: 3vw ;
+    }
+
     .topnav a.icon {
         float: left;
         display: block;
@@ -623,8 +640,8 @@ p
     {
             text-align: right;
                 position: absolute;
-                top: 70%;
-                left: 50%;
+                top: 13vh;
+                left: 50vw;
     }
 
         h1 {
@@ -690,11 +707,12 @@ p
 	 
 	 .hero-image
 	 {
-		height: 25%;
+		height: 25vh;
 	 }
 
 
 }
+
 	
 
 
@@ -728,6 +746,9 @@ p
         height: auto;
         font-size: 7vw;
     }
+                .topnav a {
+                    font-size: 3vh;
+                }
 }
 
 @media only screen and (max-width:400px)
@@ -743,6 +764,10 @@ p
     .container
     {
         width: 100%;
+    }
+    .topnav a
+    {
+        font-size: 3vh;
     }
 }
 

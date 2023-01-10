@@ -82,7 +82,7 @@ h1
     font-family: 'Karla', sans-serif;
     font-weight:bold;
     font-style:normal;
-    font-size: 5vw;
+    font-size: 4vw;
     text-transform: capitalize;
     
     margin: 60px 0 0 0;
@@ -91,7 +91,7 @@ h1
 }
 h2 {
     font-family: 'Karla', sans-serif;
-    font-size: 3vw;
+    font-size: 2.5vw;
     font-weight:bold;
     font-style: normal;
     text-transform: uppercase;
@@ -218,7 +218,7 @@ overflow: hidden;
     text-align: right;
     padding: 0.5em;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.5vw;
 }
 
 /* Change the color of links on hover */
@@ -358,7 +358,7 @@ overflow: hidden;
 
 .section
 {
-
+    margin: 0 20px 40px 0;
 }
 
 /* Create four equal columns that floats next to each other */

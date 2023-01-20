@@ -5,6 +5,15 @@
 
 
 
+    #cardwrapper .card
+    {
+        /* Remember to apply to index??? */
+         /* 291 */
+            min-height: 300px;
+        max-width: 400px;
+        margin: 0 auto !important;
+
+    }
 * {
     box-sizing: border
 }

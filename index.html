@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,111 +8,83 @@
     <title>Joni Suojanen</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-
 </head>
 
-
-
 <body>
-
-
-<!-- Header -->
-<div class="hero-image row " id="TOP">
-    <div class="hero-text  col-11" id="top">
-        <h1>Joni Suojanen</h1>
-        <h2>Game Designer</h2>
-    </div>
-</div>
-
-<div class="topnav" id="myTopnav">
-
-    <a href="./docs/Joni Suojanen_Resume.pdf" target="_blank"> Resume</a>
+    <div id="myTopnav" class="topnav">
+        <p>Joni Suojanen</p>
+        <a href="./docs/Joni Suojanen_Resume.pdf" target="_blank">Resume</a>
         <a href="about.html">About</a>
-        <a href="/index.html" class="active">Portfolio</a>
-
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-    </a>
-</div>
-<script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
+        <a href="/index.html">Portfolio</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
         }
-    }
-</script>
-
-</div>
+    </script>
 
 
+    <!-- Projects -->
+    <h1 style="text-align:center">PROJECTS</h1>
+<div class="row margin" id="cardwrapper">
+    <div class="col-3">
 
-
-
-
-
-
-
-
-
-
-<!-- Projects -->
-<h1 style="text-align:center">PROJECTS</h1>
-
-
-<br>
-
-<div class="row " id="cardwrapper">
-    <div class="col-4">
         <div class="card section">
 
+                <div class="centered">
 
-            <div class="container " >
+                    <div class=" img">
+                        <a href="./BreakTheBeyond.html">
+                            <img class=" zoom2" src="./images/Logos/BTB.png" alt="Break the Beyond"></a></p>
+                    </div>
+                    <h2>Break The Beyond</h2>
+                    <p>Latchback Games</p>
+                    <p> <a href="/BreakTheBeyond.html" class="button">View</a>
 
+                </div>
+        </div>
+    </div>
+
+    <div class="col-3">
+        <div class="card section container">
                 <div class="centered">
                 
                 <div class=" img">
                     <a href="./Project1.html" >
-                        <img class=" zoom2" src="./images/Slippy Slope Title.png" alt="Slippy Slope"></a></p>
+                        <img class=" zoom2" src="./images/Slippy Slope/Titlepic.png" alt="Slippy Slope"></a></p>
                 </div>
                 <h2>Slippy Slope</h2>
                 <p>Personal Project</p>
                 <p> <a href="/Project1.html" class="button">View</a>
-
                 </div>
-            </div>
         </div>
     </div>
 
-    <div class="col-4">
-        <div class="card section">
-
-            <div class="container">
+    <div class="col-3">
+        <div class="card section container">
                 <div class="centered">
                 <div class="img">
                     <a href="./Project2.html">
-                        <img class=" zoom2" src="/images/WD-TITLE.png" alt="Wizard Defense"></a></p>
+                        <img class=" zoom2" src="/images/WD.png" alt="Wizard Defense"></a></p>
                 </div>
                 <h2 style="text-align: center;">Wizard Defense</h2>
                 
                 <p>Personal Project</p>
                 <p> <a href="/Project2.html" class="button">View</a>
                 </div>
-
-
-                
-            </div>
         </div>
     </div>
 
-    <div class="col-4">
-        <div class="card section">
-
-            <div class="container">
+    <div class="col-3">
+        <div class="card section container">
                 <div class="centered">
                 <div class="img">
                     <a href="./Project 3 .html">
@@ -121,18 +94,9 @@
                 <p>Practical Training</p>
                 <p> <a href="./Project 3 .html" class="button">View</a>
                 </div>
-
-                
             </div>
         </div>
-    </div>
 </div>
-
-
-
-
 <br>
-<br>
-
 </body>
 </html>

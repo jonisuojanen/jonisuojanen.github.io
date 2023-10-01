@@ -1,84 +1,45 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600;800&display=swap');
+@import url("https: //fonts.google.com/specimen/Poppins?query=Poppins");
 @import url('https: //www.w3schools.com/w3css/4/w3.css');
-
-
 
     #cardwrapper .card
     {
         /* Remember to apply to index??? */
          /* 291 */
-            min-height: 300px;
-        max-width: 550px;
+            min-height: 150px;
+        max-width: 600px;
         margin: 0 auto !important;
+        background-size: cover;
+        background-position: center;
+        background-repeat:no-repeat;
+        height: calc();
+        box-sizing: border-box;
+        
 
     }
-* {
-    box-sizing: border
-}
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
-}
-@media only screen and (min-width: 600px) {
+
+
+* {box-sizing: border}
 
 
 
-    /* For desktop: */
-    .col-1 {
-        width: 8.33%;
-    }
 
-    .col-2 {
-        width: 16.66%;
-    }
+.margin{margin: 5vw;}
 
-    .col-3 {
-        width: 25%;
-    }
 
-    .col-4 {
-        width: 33.33%;
-    }
-
-    .col-5 {
-        width: 41.66%;
-    }
-
-    .col-6 {
-        width: 50%;
-    }
-
-    .col-7 {
-        width: 58.33%;
-    }
-
-    .col-8 {
-        width: 66.66%;
-    }
-
-    .col-9 {
-        width: 75%;
-    }
-
-    .col-10 {
-        width: 83.33%;
-    }
-
-    .col-11 {
-        width: 91.66%;
-    }
-
-    .col-12 {
-        width: 100%;
-    }
+.grid
+{
+    display:grid;
+    grid-template-columns: 1fr 500px 1fr;
 }
 
 [class*="col-"] {
     float: left;
     padding: 15px;
     /* border: 1px solid red; */
+
 }
 .row::after {
     content: "";
@@ -86,14 +47,30 @@
     display: table;
 }
 
+:root
+{
+    --gradient-color: #582137, #713146, #582137;
+    --active-color:#582137,#a34b69,#582137;
+    --card-color: #e0f3ff;
+    --button-color: #314b5d;
+    --complimentary-color: #FFAE7B;
+    --text-color: #19262f;
+    --topnav-text: 2em;
+    --page-backgroundcolor: #9dd8ff;
+    --cardborder-color: #044b87;
+    --font-family: 'Poppins'
+}
+
+
+
 h1
 {
-    font-family: 'Karla', sans-serif;
-    font-weight:bold;
+    font-family: var(--font-family),sans-serif;
+    font-weight:bolder;
     font-style:normal;
     font-size: 4vw;
+    color: var(--text-color);
     text-transform: capitalize;
-    
     margin: 60px 0 0 0;
 
 
@@ -104,11 +81,12 @@ h1
             /* arvot kellonsuuntaisesti: ylös oikea alas vasen */
         }
 h2 {
-    font-family: 'Karla', sans-serif;
+    font-family: var(--font-family), sans-serif;
     font-size: 2.5vw;
     font-weight:bold;
     font-style: normal;
     text-transform: uppercase;
+    color: var(--text-color);
 
 
 }
@@ -122,7 +100,7 @@ h3{
     font-size: 2vw;
     
         margin: 12px 0 14 px 0;
-        /* arvot kellonsuuntaisesti: ylös oikea alas vasen */
+        color: var(--text-color);
 }
 
 
@@ -131,6 +109,7 @@ p
 {
 
     font-size: 1.5vw;
+    color: var(--text-color);
 }
 
 
@@ -154,15 +133,13 @@ html {
 
 
 body {
-font-family: 'Karla', sans-serif;
+font-family: var(--font-family), sans-serif;
 font-kerning:normal;
 font-weight:600;
 line-height: 1.5;
-color: rgb(3, 1, 22);
-background-color: #F8EDE3;
-    
-
-
+color: var(--text-color);
+background-color: var(--page-backgroundcolor);
+/* background-image: linear-gradient(var(--gradient-color)); */
 }
 
 body,
@@ -174,7 +151,7 @@ html {
 /* The hero image */
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(255, 193, 231, 0.301), rgba(36, 3, 3, 0.5)), url("../images/Test.jpeg");
+    /* background-image: linear-gradient(rgba(255, 193, 231, 0.301), rgba(36, 3, 3, 0.5)), url("../images/Test.jpeg"); */
 
     /* Set a specific height */
     height: 30vh;
@@ -213,11 +190,6 @@ html {
 
 footer
 {
-
-
-    color: white;
-
-background-color: rgb(51, 51, 51) ; 
 min-height: calc(100vh-100px);
 overflow: hidden;
 }
@@ -227,39 +199,52 @@ overflow: hidden;
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #85586F;
+    background-color: var(--card-color);
+    border-color: var(--cardborder-color);
+    /* background-image: linear-gradient(var(--gradient-color)); */
     min-height: calc(100vh-100px);
     overflow: hidden;
+    border-color: var(--cardborder-color);
+    box-shadow: 0 4px 8px 0 var(--button-color);
 }
 
+.topnav p 
+{
+    float: left;
+        color: var(--text-color);
+        margin: 0.5em;
+        text-decoration: none;
+        font-size: var(--topnav-text);
+        position:relative
+}
 /* Style the links inside the navigation bar */
 .topnav a {
     float: right;
-    color: #f2f2f2;
+    color: var(--text-color);
     text-align: right;
     padding: 0.5em;
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: var(--topnav-text);
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #85586F;
-    color: black;
+background-color: var(--complimentary-color);
 
-            position: relative;
+position: relative;
             
-                -webkit-transition-duration: 0.4s;
+-webkit-transition-duration: 0.4s;
             
-                /* Safari */
-                transition-duration: 0.4s;
-                text-decoration: none;
-                overflow: hidden;
+/* Safari */
+transition-duration: 0.4s;
+text-decoration: none;
+overflow: hidden;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
     background-color: #532f38;
+    background-image: linear-gradient(var(--active-color));
     color: white;
 }
 /* Hide the link that should open and close the topnav on small screens */
@@ -298,11 +283,19 @@ overflow: hidden;
 
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: #fff5ec;
-    margin: 8px;
-    padding: 3%;
+    box-shadow: 0 4px 8px 0 var(--cardborder-color);
+    background-color: var(--card-color);
+    padding: 5%;
+    border-radius: 5%;
+    border-color: var(--cardborder-color);
+}
+.card img{
+    border-radius: 5%;
+}
 
+.card h2
+{
+    font-size: 2em;
 }
 .card div {
     box-shadow: none;
@@ -314,10 +307,6 @@ overflow: hidden;
     background-color: #474e5d;
     color: white;
 }
-
-
-
-
 
 .points
 {
@@ -332,8 +321,15 @@ overflow: hidden;
     color: grey;
 }
 
+
+
 /* BUTTON------------------------------------ */
 
+.badge {
+    float:inherit;
+    min-height: 10px;
+    max-width: 20vw;
+}
 
 .button {
     border: none;
@@ -341,27 +337,25 @@ overflow: hidden;
     display: inline-block;
     padding: 3%;
     color: white;
-    background-color: #85586F;
+    background-color: var(--button-color);
     text-align: center;
     cursor: pointer;
     width: 6em;
     height: auto;
-    font-size: 1.5em;
     text-align: center;
         
-            -webkit-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
         
-            /* Safari */
-            transition-duration: 0.4s;
-            text-decoration: none;
-            overflow: hidden;
+    /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
 }
 
 .button:hover {
-    background-color: #c06f98;
+    background-color: var(--complimentary-color);
         transform: scale(1.1);
 }
-
 
 
 
@@ -423,18 +417,13 @@ overflow: hidden;
 .portrait {
 object-fit: cover;
 
-    width: 75%;
+    width: 100%;
     max-height: 100%;
-    border-radius: 50%;
+    border-radius: 5%;
 
 }
 
-  img {
-    max-width: 100%;
-    max-height: 400px;
 
-    
-  }
   
   .image {
     
@@ -462,6 +451,13 @@ object-fit: cover;
 
 }
 
+.videoportrait{padding-left: 67%; height: 35em; width: auto; float: calc();}
+
+img
+{
+    max-width: 100%;
+    max-height: 400px;
+}
 
 .img1 {
     float: right;
@@ -485,7 +481,13 @@ object-fit: cover;
     padding: 20px;
     display: flexbox;
     position:static;
+}
 
+.chart{
+    min-width:45vw;
+    max-width: 100%;
+    min-height: 10vh;
+    max-height: 100%;
 }
 
 
@@ -493,12 +495,6 @@ object-fit: cover;
 .flex {
     display: flex;
     justify-content:space-evenly;
-}
-
-.grid {
-    margin: 1px;
-
-    width: 100%
 }
 
 
@@ -534,279 +530,210 @@ object-fit: cover;
     width: 100%;
     height: 100%;
 }
+            
+                           /* For mobile phones: */
+                           [class*="col-"] {
+                               width: 100%;
+                           }
+            
+                           /* Extra small devices (phones, 600px and down) */
+                           @media only screen and (max-width: 600px) {
+            
+                               .topnav a:not(:first-child) {
+                                   display: none;
+                               }
+            
+                               .topnav a.icon {
+                                   float: right;
+                                   display: block;
+                               }
+            
+                               .topnav.responsive {
+                                   position: relative;
+                               }
+            
+                               .topnav.responsive a.icon {
+                                   position: absolute;
+                                   right: 0;
+                                   top: 0;
+                               }
+            
+                               .topnav.responsive a {
+                                   float: none;
+                                   display: block;
+                                   text-align: left;
+                               }
+            
+                               .button {
+                                   font-size: 4vw;
+                               }
+            
+                               .card p {
+                                   font-size:4vw;
+                               }
+
+                               .card h2{
+                                font-size: 5vw;
+                               }
+            
+                               h1 {
+                                   font-size: 10vw;
+                               }
+                               h3{font-size: 5vw;}
 
 
+                               p{font-size: 4vw;}
+
+                               li{ font-size: 4vw;}
+
+                               .badge{max-width: 50vw;}
+                               .chart{ min-width: 55vw;max-width: 10vw;}
 
 
+            
+                               /* TEXT */
+            
+            
+            
+            
+                           }
+            
+                           /* Small devices (portrait tablets and large phones, 600px and up) */
+                           @media only screen and (min-width: 600px) {
+                               .responsive {
+                                   width: 100%;
+                                   font-size: 1.5vw;
+                               }
+            
+            
+                               .button {
+            
+                                   width: 5em;
+                                   height: auto;
+                                   font-size: 2vw;
+                               }
+            
+                               .flex {
+                                   display: block;
+                               }
+            
+            
+                               .left {
+                                   box-shadow: none;
+                               }
+            
+            
+                               p {
+                                   font-size: 1.5vw;
+                               }
+            
+                               .badge {
+                                   max-width: 50vw;
+                               }
 
+                               .card p{font-size: 3vw;}
 
-	
-	 /* Responsive layout - makes a two column-layout instead of four columns */
- @media screen and (max-width: 900px) {
-     .column {
-         width: 50%;
+                               .button{font-size: 5vw;}
+
+                            }
+                               
+            
+                           /* Medium devices (landscape tablets, 768px and up) */
+                           @media only screen and (min-width: 768px) {
+            
+                               [class*="col-"] {
+                                   width: 100%;
+                               }
+            
+                               .card p {
+                                   font-size: 1.5em;
+                               }
+            
+                               h1 {
+                                   font-size: 5vw;
+                               }
+                           }
+            
+                           /* Large devices (laptops/desktops, 992px and up) */
+                           @media only screen and (min-width: 992px) {
+                               /* For desktop: */
+    .col-1 {
+    width: 8.33%;
+    }
+
+    .col-2 {
+    width: 16.66%;
+    }
+
+    .col-3 {
+    width: 25%;
+    }
+
+    .col-4 {
+    width: 33.33%;
+    }
+
+    .col-5 {
+    width: 41.66%;
+    }
+
+    .col-6 {
+    width: 50%;
+    }
+                                                        
+    .col-7 {
+    width: 58.33%;
+    }
+                                                        
+     .col-8 {
+    width: 66.66%;
+    }
+
+    .col-9 {
+    width: 75%;
      }
-
-      .hero-image	{
-	height: 25vh;
-					}
- }
-	
-
-/* Responsive layout - makes a one column layout instead of a two-column layout */
-@media screen and (max-width: 800px) {
-	
-	.button {
-
-    width: 5em;
-    height: auto;
-    font-size: 1.1em;
-
-	
-}
-
-.flex
-{
-    display: flex;
-}
-
-.hero-image {
-    height: 30vh;
-}
-p
-{
-    font-size: 2vw;
-}
-
-
-
-}
-
-
-
-
- /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
- @media only screen and (max-width:700px) {
-    .responsive {
-            width: 100%;
-
-            font-size: 1.5vw;
-        }
-
-.hero-image {
-    height: 50vh;
-}
-
-                .button {
-                    
-                    width: 5em;
-                    height: auto;
-                    font-size: 2vw;
-                }
-
-                .flex
-                {
-                    display: block;
-                }
-
-                
-                .left
-                {
-                    box-shadow: none;
-                }
-                
-
-                p{
-                    font-size: 1.5vw;
-                }
-
-
-}
-
-
-
-
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-    .topnav a:not(:first-child)
-    {
-        display: none;
+                                                        
+    .col-10 {
+     width: 83.33%;
     }
 
-    .topnav a
-    {
-        font-size: 3vw ;
+    .col-11 {
+    width: 91.66%;
     }
-
-    .topnav a.icon {
-        float: left;
-        display: block;
-        size: 5em;
+    .col-12 {
+    width: 100%;
     }
-
-    .hero-text
-    {
-            text-align: right;
-                position: absolute;
-                top: 13vh;
-                left: 50vw;
+    h1{font-size: 3vw;}
+    .card h2 {
+    font-size: 1.5vw;
     }
+    .button{font-size: 2vw;}
 
-        h1 {
-            font-family: 'Karla', sans-serif;
-            font-weight: bold;
-            font-style: normal;
-            font-size: 7vw;
-            text-transform: capitalize;
+    .card p {font-size: 1.5vw;}
+
     
-    
-    
-    
-        }
-    
-        h2 {
-            font-family: 'Karla', sans-serif;
-            font-size: 5vw;
-            font-weight: bold;
-            font-style: normal;
-            text-transform: uppercase;
-    
-        }
-    
-        h3 {
-            font-size: 4vw;
-        }
-    
-    
-    
-        p {
-            padding-left: 10px;
-            font-size: 3vw;
-        }
-    
-        ul {
-            font-size: 3vw;
-            padding: 5%;
-        }
-	
-	     .responsive {
-         font-size: 1.5vw;
-     }
-	 
-	      .column {
-         width: 100%;
-     }
-	 
-	 .topnav.responsive {
-        position: relative;
-    }
-
-    .topnav.responsive a.icon {
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
-
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: right;
-    }
-	 
-	 .hero-image
-	 {
-		height: 25vh;
-	 }
 
 
 }
-
-	
-
-
-
-@media only screen and (max-width: 500px) {
-    .responsive {
-        
-        width: 100%;
-    }
-    .container
-    {
-        width: 100%;
-    }
+            
+                           /* Extra large devices (large laptops and desktops, 1200px and up) */
+                           @media only screen and (min-width: 1200px) {
 
 
-        .flex
-        {
-         display: block;
-         justify-content:space-evenly;
-        }
+                            .card p {font-size: 1vw;}
 
+                            .card h2{font-size: 1.25vw;}
 
-    .hero-text
-    {
-        font-size: 3vw;
-    }
+                            .button{font-size: 1.5vw;}
 
+                            .margin{margin: 15%;}
 
-    .button{
-        width: 40vw;
-        height: auto;
-        font-size: 7vw;
-    }
-                .topnav a {
-                    font-size: 3vh;
-                }
-}
+                            .chart{min-height: auto; min-width: 25vw;}
 
-@media only screen and (max-width:400px)
-{
-    .responsive
-    {
-        width: 100%;
-    }
-    .column
-    {
-        width: 100%;
-    }
-    .container
-    {
-        width: 100%;
-    }
-    .topnav a
-    {
-        font-size: 3vh;
-    }
-}
+                            .card li{ font-size: 1vw;}
 
+                            .badge{max-width: 10em;}
 
+                            
 
-/* Accessablity */
-.zoom {
-
-
-    transition: transform .2s;
-    /* Animation */
-
-    margin: 0 auto;
-}
-
-.zoom:hover {
-    transform: scale(1.5);
-    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
-.zoom2 {
-
-
-    transition: transform .2s;
-    /* Animation */
-
-    margin: 0 auto;
-}
-
-.zoom2:hover {
-    transform: scale(1.1);
-    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
+                           }

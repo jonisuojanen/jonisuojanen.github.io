@@ -26,7 +26,7 @@
 
 
 
-.margin{margin: 5vw;}
+.margin{margin-left: 5%; margin-right: 5%;}
 
 
 .grid
@@ -470,7 +470,7 @@ img
 .img2 {
     float: center;
     max-width: 70%;
-    height: auto;
+    height: auto;:
     padding: 20px;
 }
 
@@ -567,6 +567,9 @@ img
                                .button {
                                    font-size: 4vw;
                                }
+                               .card{
+                                border-radius: 0%;
+                               }
             
                                .card p {
                                    font-size:4vw;
@@ -587,6 +590,7 @@ img
                                li{ font-size: 4vw;}
 
                                .badge{max-width: 50vw;}
+
                                .chart{ min-width: 55vw;max-width: 10vw;}
 
 
@@ -710,6 +714,7 @@ img
     .button{font-size: 2vw;}
 
     .card p {font-size: 1.5vw;}
+    .margin{margin-left: 15%; margin-right: 15%;}
 
     
 
@@ -720,13 +725,12 @@ img
                            @media only screen and (min-width: 1200px) {
 
 
-                            .card p {font-size: 1vw;}
+                            .card p {font-size:1vw;}
 
                             .card h2{font-size: 1.25vw;}
 
                             .button{font-size: 1.5vw;}
 
-                            .margin{margin: 15%;}
 
                             .chart{min-height: auto; min-width: 25vw;}
 
@@ -737,3 +741,4 @@ img
                             
 
                            }
+                           

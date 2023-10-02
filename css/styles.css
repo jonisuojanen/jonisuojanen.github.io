@@ -567,15 +567,23 @@ img {
   }
 
   .card p {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
   h1 {
     font-size: 5vw;
   }
 
+  h3 {
+    font-size: 4vw;
+  }
+
   .col-3 {
     width: 100%;
+  }
+
+  .card li {
+    font-size: 3vw;
   }
 }
 
@@ -633,10 +641,10 @@ img {
   }
 
   .card h2 {
-    font-size: 1.5vw;
+    font-size: 2.5vw;
   }
   .button {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 
   .chart {
@@ -645,14 +653,14 @@ img {
   }
 
   .card p {
-    font-size: 1.5vw;
+    font-size: 2vw;
   }
   .margin {
     margin-left: 15%;
     margin-right: 15%;
   }
   .portrait {
-    width: 50%;
+    width: 100%;
   }
 }
 

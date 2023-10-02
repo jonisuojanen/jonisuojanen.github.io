@@ -396,7 +396,7 @@ img {
   float: center;
   max-width: 70%;
   height: auto;
-  :padding: 20px;
+  padding: 20px;
 }
 
 .img3 {
@@ -666,11 +666,15 @@ img {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1600px) {
+  h1 {
+    font-size: 3vw;
+  }
   p {
     font-size: 1vw;
   }
+
   .card p {
-    font-size: 1vw;
+    font-size: 0.75vw;
   }
 
   .card h2 {

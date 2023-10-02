@@ -669,12 +669,15 @@ img {
   h1 {
     font-size: 3vw;
   }
+  h3 {
+    font-size: 1.5vw;
+  }
   p {
     font-size: 1vw;
   }
 
   .card p {
-    font-size: 0.75vw;
+    font-size: 1vw;
   }
 
   .card h2 {
@@ -744,5 +747,8 @@ img {
 
   .col-12 {
     width: 100%;
+  }
+  .portrait {
+    width: 80%;
   }
 }

@@ -594,6 +594,7 @@ img
                                .chart{ min-width: 55vw;max-width: 10vw;}
 
 
+
             
                                /* TEXT */
             
@@ -638,6 +639,7 @@ img
                                .card p{font-size: 3vw;}
 
                                .button{font-size: 5vw;}
+                               
 
                             }
                                
@@ -656,6 +658,8 @@ img
                                h1 {
                                    font-size: 5vw;
                                }
+
+                               .col-3{width: 100%;}
                            }
             
                            /* Large devices (laptops/desktops, 992px and up) */

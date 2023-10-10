@@ -665,7 +665,7 @@ img {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1300px) {
   h1 {
     font-size: 3vw;
   }
@@ -677,7 +677,7 @@ img {
   }
 
   .card p {
-    font-size: 1vw;
+    font-size: 0.9vw;
   }
 
   .card h2 {

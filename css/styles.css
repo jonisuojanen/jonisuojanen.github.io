@@ -234,14 +234,17 @@ footer {
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 var(--cardborder-color);
+  box-shadow: 0 4px 10px 0 var(--cardborder-color);
+  border-style:double;
   background-color: var(--card-color);
-  padding: 5%;
+  padding: 0.5em;
   border-radius: 1em;
-  border-color: var(--cardborder-color);
+  border-color: var(--cardborder);
 }
 .card img {
   border-radius: 1em;
+  border-color: var(--text-color);
+  border-style: inset;
 }
 
 .card h2 {
@@ -276,8 +279,9 @@ footer {
 }
 
 .button {
-  border: none;
-  border-radius: 1em;
+  border-radius: 0.5em;
+  border-style: solid;
+  border-color: var(--text-color);
   outline: 0;
   display: inline-block;
   padding: 3%;
@@ -482,7 +486,7 @@ img {
   }
 
   .button {
-    font-size: 4vw;
+    font-size: 8vw;
   }
   .card {
     border-radius: none;
@@ -686,7 +690,7 @@ img {
   }
 
   .button {
-    font-size: 1.5vw;
+    font-size: 2vw;
   }
 
   .chart {

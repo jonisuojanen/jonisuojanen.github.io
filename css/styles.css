@@ -237,11 +237,11 @@ footer {
   box-shadow: 0 4px 8px 0 var(--cardborder-color);
   background-color: var(--card-color);
   padding: 5%;
-  border-radius: 5%;
+  border-radius: 1em;
   border-color: var(--cardborder-color);
 }
 .card img {
-  border-radius: 5%;
+  border-radius: 1em;
 }
 
 .card h2 {
@@ -277,6 +277,7 @@ footer {
 
 .button {
   border: none;
+  border-radius: 1em;
   outline: 0;
   display: inline-block;
   padding: 3%;
@@ -347,7 +348,7 @@ footer {
 
   width: 100%;
   max-height: 100%;
-  border-radius: 5%;
+  border-radius: 5em;
 }
 
 .image {
@@ -484,7 +485,7 @@ img {
     font-size: 4vw;
   }
   .card {
-    border-radius: 0%;
+    border-radius: none;
   }
 
   .card p {

@@ -235,7 +235,7 @@ footer {
 
 .card {
   box-shadow: 0 4px 10px 0 var(--cardborder-color);
-  border-style:double;
+  border-style: double;
   background-color: var(--card-color);
   padding: 0.5em;
   border-radius: 1em;
@@ -562,6 +562,11 @@ img {
 
   .button {
     font-size: 5vw;
+  }
+
+  .portrait {
+    width: 75%;
+    max-height: 75%;
   }
 }
 

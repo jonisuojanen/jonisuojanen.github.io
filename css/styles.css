@@ -114,6 +114,7 @@ body {
   line-height: 1.5;
   color: var(--text-color);
   background-color: var(--page-backgroundcolor);
+
   /* background-image: linear-gradient(var(--gradient-color)); */
 }
 
@@ -165,7 +166,7 @@ footer {
   min-height: calc(100vh-100px);
   overflow: hidden;
   border-color: var(--cardborder-color);
-  box-shadow: 0 4px 8px 0 var(--button-color);
+  box-shadow: 0 0px 500px 500px var(--card-color);
 }
 
 .topnav p {
@@ -235,7 +236,7 @@ footer {
 
 .card {
   box-shadow: 0 4px 10px 0 var(--cardborder-color);
-  border-style: double;
+  border-style: none;
   background-color: var(--card-color);
   padding: 0.5em;
   border-radius: 1em;
@@ -252,6 +253,10 @@ footer {
 }
 .card div {
   box-shadow: none;
+}
+
+.colorbox {
+  background-color: var(--cardborder-color);
 }
 
 .about-section {

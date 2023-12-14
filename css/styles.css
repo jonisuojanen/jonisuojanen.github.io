@@ -42,16 +42,26 @@
 }
 
 :root {
+  --toptext-color: #e9e9e9;
+  --body-bg: hsl(0, 0%, 5%);
   --gradient-color: #582137, #713146, #582137;
   --active-color: #582137, #a34b69, #582137;
   --card-color: #e0f3ff;
   --button-color: #314b5d;
   --complimentary-color: #ffae7b;
   --text-color: #19262f;
-  --topnav-text: 2em;
+  --topnav-text: 2rem;
   --page-backgroundcolor: #9dd8ff;
   --cardborder-color: #044b87;
   --font-family: "Poppins";
+}
+
+section {
+  padding: 1rem;
+}
+
+header h1 {
+  color: var(--toptext-color);
 }
 
 h1 {
@@ -61,7 +71,6 @@ h1 {
   font-size: 4vw;
   color: var(--text-color);
   text-transform: capitalize;
-  margin: 60px 0 0 0;
 }
 
 #top h1 {
@@ -83,8 +92,6 @@ h2 + p {
 
 h3 {
   font-size: 2vw;
-
-  margin: 12px 0 14 px 0;
   color: var(--text-color);
 }
 
@@ -113,7 +120,7 @@ body {
   font-weight: 600;
   line-height: 1.5;
   color: var(--text-color);
-  background-color: var(--page-backgroundcolor);
+  background-color: var(--text-color);
 
   /* background-image: linear-gradient(var(--gradient-color)); */
 }
@@ -160,18 +167,18 @@ footer {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: var(--card-color);
+  background-color: var();
   border-color: var(--cardborder-color);
   /* background-image: linear-gradient(var(--gradient-color)); */
-  min-height: calc(100vh-100px);
+  min-height: calc(50vh-100px);
   overflow: hidden;
   border-color: var(--cardborder-color);
-  box-shadow: 0 0px 500px 500px var(--card-color);
+  box-shadow: 0 0px 500px 500px var(--body-bg);
 }
 
 .topnav p {
+  color: var(--toptext-color);
   float: left;
-  color: var(--text-color);
   margin: 0.5em;
   text-decoration: none;
   font-size: var(--topnav-text);
@@ -179,8 +186,8 @@ footer {
 }
 /* Style the links inside the navigation bar */
 .topnav a {
+  color: var(--toptext-color);
   float: right;
-  color: var(--text-color);
   text-align: right;
   padding: 0.5em;
   text-decoration: none;
@@ -245,7 +252,6 @@ footer {
 .card img {
   border-radius: 1em;
   border-color: var(--text-color);
-  border-style: inset;
 }
 
 .card h2 {
@@ -469,6 +475,10 @@ img {
   .topnav a:not(:first-child) {
     display: none;
   }
+  header{
+    margin: 0.5rem;
+  }
+  }
 
   .topnav a.icon {
     float: right;
@@ -490,12 +500,16 @@ img {
     display: block;
     text-align: left;
   }
+  .topnav p{
+    display: none;
+  }
 
   .button {
     font-size: 8vw;
   }
   .card {
-    border-radius: none;
+    padding: 0rem;
+    box-shadow: none;
   }
 
   .card p {
@@ -529,9 +543,9 @@ img {
     min-width: 55vw;
     max-width: 10vw;
   }
-
-  /* TEXT */
 }
+
+/* TEXT */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {

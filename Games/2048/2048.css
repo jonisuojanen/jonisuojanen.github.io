@@ -1,0 +1,129 @@
+body {
+  font-family: system-ui;
+  text-align: center;
+}
+hr {
+  width: 500px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#board {
+  width: 400px;
+  height: 400px;
+
+  background-color: aliceblue;
+  border: 6px solid #b1b0ad;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tile {
+  width: 90px;
+  height: 90px;
+  border: 5px solid #b1b0ad;
+
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.x2 {
+  background-color: #eee4da;
+  color: #727371;
+}
+
+.x4 {
+  background-color: #ece0ca;
+  color: #727371;
+}
+
+.x8 {
+  background-color: #f4b17a;
+  color: white;
+}
+
+.x16 {
+  background-color: #f59575;
+  color: white;
+}
+
+.x32 {
+  background-color: #f57c5f;
+  color: white;
+}
+
+.x64 {
+  background-color: #f65d3b;
+  color: white;
+}
+
+.x128 {
+  background-color: #edce71;
+  color: white;
+}
+
+.x256 {
+  background-color: #edcc63;
+  color: white;
+}
+
+.x512 {
+  background-color: #edc651;
+  color: white;
+}
+
+.x1024 {
+  background-color: #eec744;
+  color: white;
+}
+
+.x2048 {
+  background-color: #ecc230;
+  color: white;
+}
+
+.x4096 {
+  background-color: #fe3d3d;
+  color: white;
+}
+
+.x8192 {
+  background-color: #ff2020;
+  color: white;
+}
+
+/* start and game over */
+#start,
+#game-over {
+  width: 200px;
+  height: 100px;
+  text-align: center;
+}
+
+#start a,
+#game-over a {
+  border: 3px solid #2b2b2b;
+  background-color: #b1b0ad;
+  color: #000000;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  display: inline-block;
+  width: 200px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#start a:hover,
+#game-over a:hover {
+  background-color: #b1ffbc;
+  color: #1d1d1d;
+}

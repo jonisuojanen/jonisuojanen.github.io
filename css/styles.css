@@ -600,6 +600,11 @@ section {
     width: 100%;
   }
 
+  .topnav a.icon {
+    float: right;
+    display: none;
+  }
+
   .card p {
     font-size: 2em;
   }
@@ -624,6 +629,7 @@ section {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1024px) {
   /* For desktop: */
+
   .col-1 {
     width: 8.33%;
   }

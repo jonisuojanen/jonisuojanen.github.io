@@ -604,6 +604,11 @@ section {
     float: right;
     display: none;
   }
+  .topnav p {
+    display: inherit;
+    text-align: center;
+    align-items: center;
+  }
 
   .card p {
     font-size: 2em;

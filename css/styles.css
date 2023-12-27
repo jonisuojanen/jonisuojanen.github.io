@@ -219,6 +219,15 @@ footer {
   display: none;
 }
 
+.topSocial {
+  width: 5rem;
+  height: 5rem;
+  float: left;
+  text-align: left;
+  padding: 0.5em;
+  display: none;
+}
+
 /* Alignments */
 
 .centered {
@@ -248,11 +257,6 @@ footer {
   padding: 0.5em;
   border-radius: 1em;
   border-color: var(--cardborder);
-}
-.card img {
-  border-radius: 1.5rem;
-  border-color: var(--text-color);
-  padding: 1rem;
 }
 
 .card h2 {
@@ -296,14 +300,14 @@ footer {
   border-color: var(--text-color);
   outline: 0;
   display: inline-block;
-  padding: 3%;
   color: white;
   background-color: var(--button-color);
   text-align: center;
   cursor: pointer;
-  width: 6em;
+  width: 10rem;
   height: auto;
   text-align: center;
+  background-position-x: center;
 
   -webkit-transition-duration: 0.4s;
 
@@ -319,8 +323,34 @@ footer {
   transform: scale(1.1);
 }
 
-/* NEW   */
+.socialbutton {
+  display: inline-block;
+  color: white;
+  background-color: var(--button-color);
+  text-align: center;
+  cursor: pointer;
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  background-position-x: center;
 
+  -webkit-transition-duration: 0.4s;
+
+  /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.socialbutton:hover {
+  background-color: var(--complimentary-color);
+  color: rgba(0, 0, 0, 1);
+  transform: scale(1.1);
+}
+
+#footerlink {
+  background-color: none;
+}
 /* Content */
 .content {
   background-color: white;
@@ -505,11 +535,47 @@ img {
   display: none;
 }
 
+.botnav a:not(:first-child) {
+  display: none;
+}
+header {
+  margin: 0.5rem;
+}
+
+.botnav a.icon {
+  float: right;
+  display: block;
+}
+
+.botnav.responsive {
+  position: relative;
+}
+
+.botnav.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.botnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+.botnav p {
+  display: none;
+}
+
 .button {
   font-size: 8vw;
 }
+.socialbutton {
+  border-radius: 0em;
+  width: 3em;
+  height: 3em;
+}
 .card {
-  padding: 0rem;
+  padding: 1rem;
   box-shadow: none;
 }
 
@@ -559,9 +625,13 @@ section {
   }
 
   .button {
-    width: 5em;
-    height: auto;
+    width: 5rem;
+    height: 5rem;
     font-size: 2vw;
+  }
+  .topSocial {
+    display: none;
+    flex: ;
   }
 
   .flex {
@@ -584,13 +654,13 @@ section {
     font-size: 3vw;
   }
 
-  .button {
-    font-size: 5vw;
-  }
-
   .portrait {
     width: 75%;
     max-height: 75%;
+  }
+  .socialbutton {
+    width: 10rem;
+    height: 10rem;
   }
 }
 
@@ -598,6 +668,11 @@ section {
 @media only screen and (min-width: 768px) {
   [class*="col-"] {
     width: 100%;
+  }
+
+  .button {
+    width: 15rem;
+    font-size: 2rem;
   }
 
   .topnav a.icon {
@@ -609,9 +684,13 @@ section {
     text-align: center;
     align-items: center;
   }
+  .topSocial {
+    display: none;
+  }
 
-  .card p {
-    font-size: 2em;
+  .card {
+    font-size: 1rem;
+    padding: 2rem;
   }
 
   h1 {
@@ -619,15 +698,14 @@ section {
   }
 
   h3 {
-    font-size: 4vw;
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
   }
 
   .col-3 {
     width: 100%;
-  }
-
-  .card li {
-    font-size: 3vw;
   }
 }
 
@@ -636,11 +714,11 @@ section {
   /* For desktop: */
 
   .col-1 {
-    width: 8.33%;
+    width: 100%;
   }
 
   .col-2 {
-    width: 16.66%;
+    width: 100%;
   }
 
   .col-3 {
@@ -688,7 +766,12 @@ section {
   .card h2 {
     font-size: 2.5vw;
   }
+  .card p {
+    font-size: 2vw;
+  }
   .button {
+    width: 10rem;
+    width: 10rem;
     font-size: 4vw;
   }
 
@@ -697,9 +780,6 @@ section {
     min-height: 25vh;
   }
 
-  .card p {
-    font-size: 2vw;
-  }
   .margin {
     margin-left: 15%;
     margin-right: 15%;
@@ -721,6 +801,9 @@ section {
     font-size: 1.5vw;
   }
 
+  .card {
+    padding: 2rem;
+  }
   .card p {
     font-size: 0.9vw;
   }
@@ -730,7 +813,17 @@ section {
   }
 
   .button {
-    font-size: 2vw;
+    width: 10rem;
+    height: auto;
+    font-size: 2rem;
+  }
+  .socialbutton {
+    width: 8rem;
+    height: 8rem;
+    padding: 1rem;
+  }
+  .topSocial {
+    display: block;
   }
 
   .chart {

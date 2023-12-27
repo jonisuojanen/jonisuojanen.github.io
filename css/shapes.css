@@ -79,12 +79,12 @@
     var(--page-backgroundcolor),
     var(--page-backgroundcolor)
   );
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 15em;
+  padding-bottom: 20em;
 
-  --mask: radial-gradient(102.96px at 50% 140px, #000 99%, #0000 101%)
-      calc(50% - 100px) 0/200px 100%,
-    radial-gradient(102.96px at 50% -90px, #0000 99%, #000 101%) 50% 50px/200px
+  --mask: radial-gradient(223.61px at 50% 300px, #000 99%, #0000 101%)
+      calc(50% - 200px) 0/400px 100%,
+    radial-gradient(223.61px at 50% -200px, #0000 99%, #000 101%) 50% 100px/400px
       100% repeat-x;
   -webkit-mask: var(--mask);
   mask: var(--mask);
@@ -123,6 +123,9 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1024px) {
+  .wavetop {
+    padding-bottom: 5rem;
+  }
   /* For desktop: */
 }
 

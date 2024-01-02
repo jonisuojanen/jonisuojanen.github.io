@@ -79,12 +79,12 @@
     var(--page-backgroundcolor),
     var(--page-backgroundcolor)
   );
-  padding-top: 15em;
-  padding-bottom: 20em;
+  padding-top: 15rem;
+  padding-bottom: 20rem;
 
-  --mask: radial-gradient(223.61px at 50% 300px, #000 99%, #0000 101%)
-      calc(50% - 200px) 0/400px 100%,
-    radial-gradient(223.61px at 50% -200px, #0000 99%, #000 101%) 50% 100px/400px
+  --mask: radial-gradient(164.36px at 50% 221.25px, #000 99%, #0000 101%)
+      calc(50% - 150px) 0/300px 100%,
+    radial-gradient(164.36px at 50% -146.25px, #0000 99%, #000 101%) 50% 75px/300px
       100% repeat-x;
   -webkit-mask: var(--mask);
   mask: var(--mask);
@@ -98,9 +98,9 @@
     var(--complimentary-color)
   );
 
-  --mask: radial-gradient(62.61px at 50% 84px, #000 99%, #0000 101%)
-      calc(50% - 56px) 0/112px 100%,
-    radial-gradient(62.61px at 50% -56px, #0000 99%, #000 101%) 50% 28px/112px
+  --mask: radial-gradient(109.57px at 50% 147.5px, #000 99%, #0000 101%)
+      calc(50% - 100px) 0/200px 100%,
+    radial-gradient(109.57px at 50% -97.5px, #0000 99%, #000 101%) 50% 50px/200px
       100% repeat-x;
   -webkit-mask: var(--mask);
   mask: var(--mask);

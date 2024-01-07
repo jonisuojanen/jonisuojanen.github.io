@@ -62,6 +62,7 @@ section {
 
 header h1 {
   color: var(--toptext-color);
+  font-size: var(--topnav-text);
 }
 
 h1 {
@@ -817,12 +818,14 @@ section {
     font-size: 2rem;
   }
   .socialbutton {
-    width: 8rem;
-    height: 8rem;
+    width: 5rem;
+    height: 5rem;
     padding: 1rem;
   }
   .topSocial {
     display: block;
+    width: 4rem;
+    height: 4rem;
   }
 
   .chart {
@@ -893,4 +896,15 @@ section {
     margin-left: 10%;
     margin-right: 10%;
   }
+}
+
+@media only screen and (min-width: 3840px) {
+
+  .socialbutton
+  {
+    width: 12rem;
+    height: 12rem;
+  }
+
+
 }

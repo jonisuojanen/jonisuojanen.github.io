@@ -109,7 +109,6 @@ p {
 
 ul {
   font-size: 1.5vw;
-  padding: 5%;
 }
 
 html {
@@ -257,6 +256,22 @@ footer {
 *:after {
   box-sizing: inherit;
 }
+.tag{
+  display: inline;
+  float: inherit;
+  border-radius: 0.5rem;
+  margin-right: 7px;
+}
+.tag p{
+  font-size: 0.1rem;
+}
+
+#blue{
+  background-color: lightblue;
+}
+#red{
+  background-color: lightcoral;
+}
 
 .card {
   box-shadow: 0 4px 10px 0 var(--cardborder-color);
@@ -265,6 +280,36 @@ footer {
   padding: 0.5em;
   border-radius: 2rem;
   border-color: var(--cardborder-color);
+}
+.projectcard {
+  box-shadow: 0 4px 10px 0 var(--cardborder-color);
+  border-style: solid;
+  background-color: var(--card-color);
+  border-radius: 2rem;
+  border-color: var(--cardborder-color);
+  max-width: 600px;
+  height: auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.projectcard img
+{
+  border-radius: 2rem;
+  margin: auto;
+  width: 500px;
+  height: auto;
+  
+}
+.projectcard h3
+{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.projectcard p
+{
+  font-size: 1rem;
 }
 
 .card h2 {
@@ -393,8 +438,7 @@ footer {
   align-items: center;
   justify-content: center;
   height: auto;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding: 5%;
 }
 
 .container::after,
@@ -605,6 +649,9 @@ header {
   padding: 1rem;
   border-radius: 2rem;
 }
+.projectcard{
+  display: inline-block;
+}
 
 .card p {
   font-size: 1rem;
@@ -623,7 +670,8 @@ p {
 }
 
 li {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 
 .badge {
@@ -839,6 +887,10 @@ section {
 
   .card h2 {
     font-size: 1.25vw;
+  }
+  .projectcard
+  {
+    display: flex;
   }
 
   .button {

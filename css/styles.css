@@ -282,7 +282,7 @@ footer {
   border-color: var(--cardborder-color);
 }
 .projectcard {
-  box-shadow: 0 4px 10px 0 var(--cardborder-color);
+  /* box-shadow: 0 4px 10px 0 var(--cardborder-color); */
   border-style: solid;
   background-color: var(--card-color);
   border-radius: 2rem;

@@ -300,6 +300,7 @@ footer {
   margin: auto;
   width: 500px;
   height: auto;
+  max-height: none;
   
 }
 .projectcard h3
@@ -868,7 +869,7 @@ section {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1280px) {
   h1 {
     font-size: 3vw;
   }
@@ -891,7 +892,8 @@ section {
   }
   .projectcard
   {
-    display: flex;
+    display: inline-flex;
+    height:500px;
   }
 
   .button {

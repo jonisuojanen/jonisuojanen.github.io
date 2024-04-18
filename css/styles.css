@@ -598,9 +598,10 @@ img {
   display: block;
   text-align: left;
 }
-.topnav p {
+.topnav.responsive h1{
   display: none;
 }
+
 
 .botnav a:not(:first-child) {
   display: none;
@@ -976,6 +977,14 @@ section {
   .margin {
     margin-left: 10%;
     margin-right: 10%;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  
+  .container{
+    min-width: 55rem;
+    
   }
 }
 

@@ -301,7 +301,7 @@ footer {
   background-color: var(--card-color); */
   border-radius: 2rem;
   border-color: var(--cardborder-color);
-  max-width: 600px;
+  max-width: 1200px;
   height: auto;
   justify-content: center;
   display: flex;

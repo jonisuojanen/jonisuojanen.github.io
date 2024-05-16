@@ -9,284 +9,240 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/shapes.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <!-- favicon -->
-
-
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+
 </head>
 
 <body>
+    <!-- Header -->
     <div id="myTopnav" class="topnav">
-        <p>Joni Suojanen </p>
-
-        <a href="./docs/Joni Suojanen_Resume.pdf" target="_blank">Resume</a>
-        <a href="#toAbout">About</a>
-        <a href="/index.html">Portfolio</a>
-
-        <div class="left">
-            <a class="topSocial" href="https://shelter-games.itch.io/" target="_blank"><img
-                    src="./images/Logos/itchio-textless-white.svg" alt="Itch.io"></a>
-            <a class="topSocial" href="https://www.linkedin.com/in/joni-suojanen/" target="_blank"><img
-                    src="./images/Logos/In-White-128@2x.png" alt="Linkedin"></a>
-            <a class="topSocial" href="mailto:joni.j.suojanen@gmail.com"><img src="./images/Logos/Mail.png"
-                    alt="email"></a>
-
+        <div class="row">
+            <p>Joni Suojanen</p>
+            <a href="./docs/Joni Suojanen_Resume.pdf" target="_blank"> Resume</a>
+            <a href="./index.html#toAbout">About</a>
+            <a href="/index.html">Portfolio</a>
+            <div class="left">
+                <a class="topSocial" href="https://shelter-games.itch.io/" target="_blank"><img
+                        src="./images/Logos/social_itchio.svg" alt="Itch.io"></a>
+                <a class="topSocial" href="https://www.linkedin.com/in/joni-suojanen/" target="_blank"><img
+                        src="./images/Logos/social_linkedin.svg" alt="Linkedin"></a>
+                <a class="topSocial" href="mailto:joni.j.suojanen@gmail.com"><img src="./images/Logos/social_mail.svg"
+                        alt="email"></a>
+    
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="row">
+            <header class="centered">
+                <h1 id="TOP">Projects</h1>
+            </header>
         </div>
 
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-
-        <header>
-            <h1 class="centered">PROJECTS</h1>
-        </header>
     </div>
 
-    <script>
-        function myFunction()
-        {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav")
-            {
-                x.className += " responsive";
-            } else
-            {
-                x.className = "topnav";
-            }
-        }
-    </script>
-
-
+    <script src="./scripts/topnav.js"></script>
     <br>
 
     <div class="row">
         <!-- Projects -->
-
         <section class="container">
-            
-            <div class="row " id="cardwrapper">
+            <div class="row" id="cardwrapper">
                 <div class="margin">
                     <!-- Card -->
-                    <div class="col-6">
+                    <div class="row col-12">
                         <div class="projectcard container">
-                            <div class="col-6">
-                                <img src="./images/Logos/BTB.png" alt="Break the beyond logo">
-                                <div class=" container">
+                            <div class="col-5">
+                                <div class="iframecontainer">
+                                    <iframe class="responsive-iframe"  src="https://www.youtube.com/embed/k9MMABCVkTw?si=wqwE4Skv4H2BYJKr&amp;loop=1&amp;start=5;&amp;autoplay=1&amp;mute=1;&amp;playlist=k9MMABCVkTw;" title="YouTube video player" frameborder="0" allow="accelerometer;loop; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="container row col-12">
+                                    <p class="tag" id="orange">Game design</p>
+                                    <p class="tag" id="orange">QA</p>
+                                    <p class="tag" id="red">Unity</p>
                                     <p class="tag" id="blue">Mobile</p>
-                                    <p class="tag" id="blue">Unity</p>
-                                    <p class="tag" id="blue">game design</p>
+                                    <p class="tag" id="blue">2023</p>
                                     <p class="tag" id="blue">balancing</p>
-                                    <p class="tag" id="blue">QA</p>
                                     <p class="tag" id="blue">C#</p>
-                                    
                                 </div>
                             </div>
-                            <div class="col-9">
-                                <h3 class="centered">Break the Beyond</h3>
-                                <p class="centered">Roguelite RPG card game</p>
-                                
-                                <ul>
-                                    <p> My contributions</p>
-                                    <li>Designing mechanics</li>
-                                    <li>Design documentation</li>
-                                    <li>Balancing game systems</li>
-                                    <li>Prototyping & Testing</li>
-                                </ul>
-
-                                <!-- Button -->
-                                <div class="centered">
-                                <a class="button" href="./BreakTheBeyond.html">More</a>
+                            <div class="col-7">
+                                <h2>Break the Beyond</h2>
+                                <p>A roguelite card game with RPG and merging elements. Fight enemies, merge your loot and become stronger to progress further realms.</p>
+                                <div class="row">
+                                    <ul>
+                                        <p style="font-weight: bolder;"> My main contributions to the project:</p>
+                                        <li>Designing engaging mechanics based on data.</li>
+                                        <li>Creating detailed documentation for team members.</li>
+                                        <li>Balancing cards and progression in the game.</li>
+                                        <li>Prototyping and testing to gain insight on player behavior.</li>
+                                    </ul>
+                                    <br>
+                                    <div class="row">
+                                        <a class="button" href="./BreakTheBeyond.html">Google Play</a>
+                                        <a class="button" href="./BreakTheBeyond.html">Read More</a>
+                                    </div>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
                     <!-- END -->
 
                     <!-- Card -->
-                    <div class="col-6">
+                    <div class="row col-12">
                         <div class="projectcard container">
-                            <div class="col-6">
-                                <img src="./images/Slippy Slope/Titlepic.png" alt="Slippy Slope">
-                                <div class=" container">
+                            <div class="col-5">
+                                <div class="iframecontainer">
+                                    <iframe class="responsive-iframe"  src="https://www.youtube.com/embed/aeT2wi9Vndg?si=wqwE4Skv4H2BYJKr&amp;loop=1&amp;start=5;&amp;autoplay=1&amp;mute=1;&amp;playlist=aeT2wi9Vndg;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="container row col-12">
+                                    <p class="tag" id="orange">Game design</p>
+                                    <p class="tag" id="orange">Level design</p>
+                                    <p class="tag" id="red">Unity</p>
                                     <p class="tag" id="blue">Mobile</p>
-                                    <p class="tag" id="blue">Unity</p>
-                                    <p class="tag" id="blue">Game design</p>
-                                    <p class="tag" id="blue">Level Design</p>
+                                    <p class="tag" id="blue">2022</p>
                                 </div>
                             </div>
-                            <div class="col-9">
-                                <h3 class="centered">Slippy Slope</h3>
-                                <p class="centered">Sliding 3D-Platformer</p>
-                                
-                                <ul>
-                                    <p> My contributions</p>
-                                    <li>Project lead</li>
-                                    <li>Design documentation</li>
-                                    <li>Level Design</li>
-                                    <li>Prototyping & Testing</li>
-                                </ul>
-
-                                <!-- Button -->
-                                <div class="centered">
-                                <a class="button" href="./Project1.html">More</a>
+                            <div class="col-7">
+                                <h2>Slippy Slope</h2>
+                                <p>A sliding 3D platformer project of a penguin baby sliding its way through the dangers of Antarctica to reach its family. </p>
+                                <div class="row">
+                                    <ul>
+                                        <p style="font-weight: bolder;"> My main contributions to the project:</p>
+                                        <li>Designed challenging sliding levels.</li>
+                                        <li>Created graybox prototypes of levels.</li>
+                                        <li>Created documentation and maintained tasks for team members.</li>
+                                        <li>Prototyped levels and pitched the game at Xamk Demo Day.</li>
+                                    </ul>
+                                    <br>
+                                    <div class="row">
+                                        <a class="button" href="./Project1.html">Read More</a>
+                                    </div>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
                     <!-- END -->
 
                     <!-- Card -->
-                    <div class="col-6">
+                    <div class="row col-12">
                         <div class="projectcard container">
-                            <div class="col-6">
-                                <img src="./images/Wizard Defense/WD.png" alt="Wizard Defence">
-                                <div class=" container">
+                            <div class="col-5">
+                                <div class="iframecontainer">
+                                    <iframe class="responsive-iframe"  src="https://www.youtube.com/embed/n7GCWlLhKlU?t?si=wqwE4Skv4H2BYJKr&amp;loop=1&amp;start=5;&amp;autoplay=1&amp;mute=1;&amp;playlist=n7GCWlLhKlU;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="container row col-12">
+                                    <p class="tag" id="orange">Game design</p>
+                                    <p class="tag" id="orange">Level design</p>
+                                    <p class="tag" id="red">Unity</p>
                                     <p class="tag" id="blue">PC</p>
-                                    <p class="tag" id="blue">Unity</p>
-                                    <p class="tag" id="blue">Game design</p>
-                                    <p class="tag" id="blue">C#</p>
+                                    <p class="tag" id="blue">2022</p>
                                 </div>
                             </div>
-                            <div class="col-9">
-                                <h3 class="centered">Wizard Defense</h3>
-                                <p class="centered">Roguelite Tower Defence Prototype</p>
-                                
-                                <ul>
-                                    <p> My contributions</p>
-                                    <li>Game Designer and Programmer</li>
-                                    <li>Design mechanics</li>
-                                    <li>Design documentation</li>
-                                    <li>Pitching</li>
-                                </ul>
-
-                                <!-- Button -->
-                                <div class="centered">
-                                <a class="button" href="./Project2.html">More</a>
+                            <div class="col-7">
+                                <h2>Wizard Defense</h2>
+                                <p>A roguelite tower defense prototype with a Carcassonne board game style tile mechanic. Collect resources, defeat the creatures and build the world! </p>
+                                <div class="row">
+                                    <ul>
+                                        <p style="font-weight: bolder;"> My main contributions to the project:</p>
+                                        <li>Designed gameplay mechanics.</li>
+                                        <li>Programmed a game prototype in Unity C#.</li>
+                                        <li>Created documentation and created tasks for team members.</li>
+                                        <li>Prototyped levels and pitched the game at Xamk Demo Day.</li>
+                                    </ul>
+                                    <br>
+                                    <div class="row">
+                                        <a class="button" href="./Project2.html">Read More</a>
+                                    </div>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
                     <!-- END -->
+
                     <!-- Card -->
-                    <div class="col-6">
+                    <div class="row col-12">
                         <div class="projectcard container">
-                            <div class="col-6">
-                                <img src="./images/Great Escape/THEGREATESCAPE TITLE.png" alt="The Great Escape">
-                                <div class=" container">
-                                    <p class="tag" id="blue">TouchWall</p>
-                                    <p class="tag" id="blue">Unity</p>
-                                    <p class="tag" id="blue">Game design</p>
-                                    <p class="tag" id="blue">Level design</p>
+                            <div class="col-5">
+                                <div class="iframecontainer">
+                                    <iframe class="responsive-iframe"  src="https://www.youtube.com/embed/kljqiEO-UGQ?si=wqwE4Skv4H2BYJKr&amp;loop=1&amp;start=5;&amp;autoplay=1&amp;mute=1;&amp;playlist=kljqiEO-UGQ;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share,loop;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="container row col-12">
+                                    <p class="tag" id="orange">Game design</p>
+                                    <p class="tag" id="orange">Level design</p>
+                                    <p class="tag" id="red">Unity</p>
+                                    <p class="tag" id="blue">Touch Wall</p>
+                                    <p class="tag" id="blue">2021</p>
                                 </div>
                             </div>
-                            <div class="col-9">
-                                <h3 class="centered">The Great Escape</h3>
-                                <p class="centered">Interactive touch wall project</p>
-                                
-                                <ul>
-                                    <p> My contributions</p>
-                                    <li>Game Designer | Level designer</li>
-                                    <li>Design mechanics</li>
-                                    <li>Design documentation</li>
-                                    <li>Unity Lighting</li>
-                                </ul>
-
-                                <!-- Button -->
-                                <div class="centered">
-                                <a class="button" href="./Project 3 .html">More</a>
+                            <div class="col-7">
+                                <h2>The Great Escape</h2>
+                                <p>An interactive touch wall pilot project by C3E-project testing experimental touch wall technology by OiOi company. The project had the objective to test the capabilities of the technology in a form of a game while motivating young people to the theatre culture. </p>
+                                <div class="row">
+                                    <ul>
+                                        <p style="font-weight: bolder;"> My main contributions to the project:</p>
+                                        <li>Designed gameplay mechanics and created documentation.</li>
+                                        <li>Created levels from grayboxing to final state with lighting</li>
+                                        <li>Integrated client requests into game mechanics.</li>
+                                    </ul>
+                                    <br>
+                                    <div class="row">
+                                        <a class="button" href="./Project3.html">Read More</a>
+                                    </div>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
                     <!-- END -->
-                    
-
-
                 </div>
             </div>
-        </section> >
-
-
-    </div>
-
-
+        </section>
     </div>
 
     <br>
 
     <div class="colorbox centered">
-        <Header id="toAbout">ABOUT ME</Header>
+        <header id="toAbout">ABOUT ME</header>
     </div>
 
     <br>
 
-    <section class="margin container ">
+    <section class="margin container">
         <div class="row card col-12">
-
-
             <div class="col-6 centered">
-                <h1>Hi! I'm Joni</h1>
+                <h1>Hello! I'm Joni</h1>
                 <hr>
                 <p class="title">Bachelor of Culture and Art, Game Design <br></p>
-
                 <!-- Start Text -->
-                I have always been curious personality, which drives my passion as a game designer. Learning more about culture has always been important to me, but my most defining quality is the ability to adapt and seek information. If I don’t know something, I will know it in the future!
-                <br><br>
-                I recently graduated from a bachelor's degree programme in game design, where I found my passion for game development. Games have always been a way for me to connect and experience. I met some of my best friends through games, which is why I want to create those good experiences for others.
-                <br><br>
-                My most recent experience as a game designer was at Latchback Games, where I used my skills to improve and implement game mechanics for soft launch. I also wrote my bachelors thesis on balancing and testing their mobile game inorder to research player behaviour in the game.
-                <br><br>
-                I value community as it shapes who we are and how we interact with others and I wish to contribute to it!
+                <p> I have always been a curious person, which drives my passion as a game designer. Learning more about culture has always been important to me, but my most defining quality is the ability to adapt and seek information. If I don’t know something, I will know it in the future! <br><br> I graduated from a bachelor's degree programme in game design, where I found my passion for game development. Games have always been a way for me to connect and experience. I met some of my best friends through games, which is why I want to create those good experiences for others. <br><br> I value community as it shapes who we are and how we interact with others and I wish to contribute to it!</p>
             </div>
-
             <div class="col-6 centered">
                 <!-- Card 1 -->
                 <img class="portrait" style="transform: scaleX(-1);" src="./images/kuva (Medium).JPG" alt="Portrait">
-                                <h3>CONTACT ME</h3>
-                <div class="">
-                    <a class="socialbutton" href="mailto:joni.j.suojanen@gmail.com"><img src="./images/Logos/Mail.png"
-                            alt="email"></a>
-                
-                    <a href="/docs/Joni Suojanen_Resume.pdf" target="_blank" class="socialbutton"><img
-                            src="./images/Logos/Resume.png" alt="Resume"></a>
-
-                    <a href="https://shelter-games.itch.io/" target="_blank" class="socialbutton"><img
-                            src="./images/Logos/itchio-textless-white.svg" alt="Itch.io"></a>
-
-                    <a href="https://www.linkedin.com/in/joni-suojanen/" target="_blank" class="socialbutton"><img
-                            src="./images/Logos/In-White-128@2x.png" alt="Linkedin"></a>
-
-
-                    <a href="https://urn.fi/URN:NBN:fi:amk-2023120835288" target="_blank" class="socialbutton"><img
-                            src="./images/Logos/Thesis.png" alt="Read Thesis"></a>
+                <h3>CONTACT ME</h3>
+                <div>
+                    <a class="socialbutton" href="mailto:joni.j.suojanen@gmail.com"><img src="./images/Logos/social_mail.svg" alt="email"></a>
+                    <a href="/docs/Joni Suojanen_Resume.pdf" target="_blank" class="socialbutton"><img src="./images/Logos/social_resume.svg" alt="Resume"></a>
+                    <a href="https://shelter-games.itch.io/" target="_blank" class="socialbutton"><img src="./images/Logos/social_itchio.svg" alt="Itch.io"></a>
+                    <a href="https://www.linkedin.com/in/joni-suojanen/" target="_blank" class="socialbutton"><img src="./images/Logos/social_linkedin.svg" alt="Linkedin"></a>
+                    <a href="https://urn.fi/URN:NBN:fi:amk-2023120835288" target="_blank" class="socialbutton"><img src="./images/Logos/Thesis.png" alt="Read Thesis"></a>
                 </div>
             </div>
         </div>
-
     </section>
 
-    <footer class="  topnav w3-container footerbox centered">
+    <footer class="topnav w3-container footerbox centered">
         <div class="row">
-            <a class="topSocial" href="https://shelter-games.itch.io/" target="_blank"><img
-                    src="./images/Logos/itchio-textless-white.svg" alt="Itch.io"></a>
-            <a class="topSocial" href="https://www.linkedin.com/in/joni-suojanen/" target="_blank"><img
-                    src="./images/Logos/In-White-128@2x.png" alt="Linkedin"></a>
-            <a class="topSocial" href="mailto:joni.j.suojanen@gmail.com"><img src="./images/Logos/Mail.png"
-                    alt="email"></a>
+            <a class="topSocial" href="https://shelter-games.itch.io/" target="_blank"><img class="text_black" src="./images/Logos/social_itchio.svg" alt="Itch.io"></a>
+            <a class="topSocial" href="https://www.linkedin.com/in/joni-suojanen/" target="_blank"><img src="./images/Logos/social_linkedin.svg" alt="Linkedin"></a>
+            <a class="topSocial" href="mailto:joni.j.suojanen@gmail.com"><img src="./images/Logos/social_mail.svg" alt="email"></a>
         </div>
     </footer>
-
-    </section>
-
-
 </body>
 
 </html>

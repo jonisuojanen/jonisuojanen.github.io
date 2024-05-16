@@ -8,7 +8,8 @@
   <title>The Great Escape</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/shapes.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">,
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <!-- favicon -->
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -19,43 +20,36 @@
 </head>
 
 <body>
-  <div id="TOP" class="topnav">
-    <p>Joni Suojanen</p>
-    <a href="./docs/Joni Suojanen_Resume.pdf" target="_blank"> Resume</a>
-    <a href="./index.html#toAbout">About</a>
-    <a href="/index.html">Portfolio</a>
+    <!-- Header -->
+    <div id="myTopnav" class="topnav">
+      <div class="row">
+          <p>Joni Suojanen</p>
+          <a href="./docs/Joni Suojanen_Resume.pdf" target="_blank"> Resume</a>
+          <a href="./index.html#toAbout">About</a>
+          <a href="/index.html">Portfolio</a>
+          <div class="left">
+              <a class="topSocial" href="https://shelter-games.itch.io/" target="_blank"><img
+                      src="./images/Logos/social_itchio.svg" alt="Itch.io"></a>
+              <a class="topSocial" href="https://www.linkedin.com/in/joni-suojanen/" target="_blank"><img
+                      src="./images/Logos/social_linkedin.svg" alt="Linkedin"></a>
+              <a class="topSocial" href="mailto:joni.j.suojanen@gmail.com"><img src="./images/Logos/social_mail.svg"
+                      alt="email"></a>
+  
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+          </a>
+      </div>
+      <div class="row">
+          <header class="centered">
+              <h1 id="TOP">The Great Escape</h1>
+          </header>
+      </div>
 
-    <div class="left">
-      <a class="topSocial" href="https://shelter-games.itch.io/" target="_blank"><img
-          src="./images/Logos/itchio-textless-white.svg" alt="Itch.io"></a>
-      <a class="topSocial" href="https://www.linkedin.com/in/joni-suojanen/" target="_blank"><img
-          src="./images/Logos/In-White-128@2x.png" alt="Linkedin"></a>
-      <a class="topSocial" href="mailto:joni.j.suojanen@gmail.com"><img src="./images/Logos/Mail.png" alt="email"></a>
-
-
-    </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-    <Header class="centered">
-      <h1>THE GREAT ESCAPE</h1>
-    </Header>
   </div>
 
-
-  <script>
-    function myFunction()
-    {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav")
-      {
-        x.className += " responsive";
-      } else
-      {
-        x.className = "topnav";
-      }
-    }
-  </script>
+  <script src="./scripts/topnav.js"></script>
+  <br>
 
 
 

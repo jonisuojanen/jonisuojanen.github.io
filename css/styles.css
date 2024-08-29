@@ -29,7 +29,6 @@
 
 [class*="col-"] {
   float: left;
-  padding: 15px;
   /* border: 1px solid red; */
 }
 
@@ -308,6 +307,10 @@ footer {
   align-items: center;
 }
 
+.textBox{
+  text-align: center;
+}
+
 .tile
 {
   box-shadow: 10px 10px 0px 0px var(--cardborder-color);
@@ -465,7 +468,6 @@ footer {
   align-items: center;
   justify-content: center;
   height: auto;
-  padding: 5%;
 }
 
 .container::after,
@@ -687,9 +689,7 @@ header {
 
 .projectcard {
   display: inline-block;
-}
-.container{
-  padding: 0%;
+  padding-top: 25%;
 }
 
 
@@ -715,6 +715,8 @@ li {
 section {
   padding: 0rem;
 }
+
+
 
 /* TEXT */
 
@@ -870,6 +872,8 @@ section {
   .portrait {
     width: 100%;
   }
+
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -883,6 +887,12 @@ section {
     display: inline-flex;
     height: 500px;
     max-width: 1600px;
+    padding-top: 0%;
+  }
+
+  .textBox{
+    text-align: left;
+    padding-left: 5%;
   }
 
   .button {

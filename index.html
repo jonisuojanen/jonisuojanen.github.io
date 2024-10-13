@@ -18,38 +18,44 @@
 </head>
 <!-- test -->
 <body>
-    <!-- Header -->
-    <div id="myTopnav" class="topnav">
-        <div class="row">
-            <p>Joni Suojanen</p>
-            <a href="./docs/Joni Suojanen_Resume.pdf" target="_blank"> Resume</a>
-            <a href="./index.html#toAbout">About</a>
-            <a href="/index.html">Portfolio</a>
-            <div class="left">
-                <a class="topSocial" href="https://shelter-games.itch.io/" target="_blank"><img
-                        src="./images/Logos/social_itchio.svg" alt="Itch.io"></a>
-                <a class="topSocial" href="https://www.linkedin.com/in/joni-suojanen/" target="_blank"><img
-                        src="./images/Logos/social_linkedin.svg" alt="Linkedin"></a>
-                <a class="topSocial" href="mailto:joni.j.suojanen@gmail.com"><img src="./images/Logos/social_mail.svg"
+
+    <section id="hero">
+        <video autoplay loop muted src="./images/Showreel.mp4"></video>
+
+        <div  class="hero-text">
+            <div class="block centered row">
+                <h1>Joni Suojanen</h1>
+                <p>Game Designer</p>
+
+                
+                <div id="myTopnav" class="block">
+                        <a class="topSocial socialbutton" href="mailto:joni.j.suojanen@gmail.com"><img src="./images/Logos/social_mail.svg"
                         alt="email"></a>
-    
+                        <a class="topSocial socialbutton" href="https://www.linkedin.com/in/joni-suojanen/" target="_blank"><img
+                            src="./images/Logos/social_linkedin.svg" alt="Linkedin"></a>
+                        <a  class="topSocial socialbutton" href="https://shelter-games.itch.io/" target="_blank"><img
+                        src="./images/Logos/social_itchio.svg" alt="Itch.io"></a>
+                </div>
+
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+
+            <div id="myTopnav"  class="homenav hero-text row">
+
+                <a href="./docs/Joni Suojanen_Resume.pdf" target="_blank"> Resume</a>
+                <a href="./index.html#toAbout">About</a>
+            </div>
+            
+
+            <script src="./scripts/topnav.js"></script>
         </div>
-        <div class="row">
-            <header class="centered">
-                <h1 id="TOP">Projects</h1>
-            </header>
-        </div>
 
-    </div>
 
-    <script src="./scripts/topnav.js"></script>
-    <br>
-
-    <div class="row">
+    </section>
+    
+    <header class="centered colorbox">
+        <h1 >Projects</h1>
+    </header>
+    <div id="TOP" class="row">
         <!-- Projects -->
         <section class="container">
             <div class="row" id="cardwrapper">
@@ -84,8 +90,8 @@
                                     </ul>
                                     <br>
                                     <div class="row">
-                                        <a class="button" href="./BreakTheBeyond.html">Google Play</a>
                                         <a class="button" href="./BreakTheBeyond.html">Read More</a>
+                                        <a class="button" href="./BreakTheBeyond.html">Google Play</a>
                                     </div>
                                 </div>
                             </div>
@@ -225,25 +231,20 @@
                 <!-- Card 1 -->
                 <img class="portrait" style="transform: scaleX(-1);" src="./images/kuva (Medium).JPG" alt="Portrait">
                 <h3>CONTACT ME</h3>
-                <div>
-                    <a class="socialbutton" href="mailto:joni.j.suojanen@gmail.com"><img src="./images/Logos/social_mail.svg" alt="email"></a>
-                    <a href="/docs/Joni Suojanen_Resume.pdf" target="_blank" class="socialbutton"><img src="./images/Logos/social_resume.svg" alt="Resume"></a>
-                    <a href="https://shelter-games.itch.io/" target="_blank" class="socialbutton"><img src="./images/Logos/social_itchio.svg" alt="Itch.io"></a>
-                    <a href="https://www.linkedin.com/in/joni-suojanen/" target="_blank" class="socialbutton"><img src="./images/Logos/social_linkedin.svg" alt="Linkedin"></a>
-                    <a href="https://urn.fi/URN:NBN:fi:amk-2023120835288" target="_blank" class="socialbutton"><img src="./images/Logos/Thesis.png" alt="Read Thesis"></a>
+                <div >
+                    <a class="socialbutton" href="mailto:joni.j.suojanen@gmail.com"><img src="./images/Logos/social_mail_blue.svg" alt="email"></a>
+                    <a class="socialbutton" href="https://www.linkedin.com/in/joni-suojanen/" target="_blank" class="socialbutton"><img src="./images/Logos/social_linkedin_blue.svg" alt="Linkedin"></a>
+                    <a class="socialbutton" href="/docs/Joni Suojanen_Resume.pdf" target="_blank" class="socialbutton"><img src="./images/Logos/social_resume_blue.svg" alt="Resume"></a>
+                    <a class="socialbutton" href="https://urn.fi/URN:NBN:fi:amk-2023120835288" target="_blank" class="socialbutton"><img src="./images/Logos/PAPERB.png" alt="Read Thesis"></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="topnav w3-container footerbox centered">
-        <div class="row">
-            <a class="topSocial" href="https://shelter-games.itch.io/" target="_blank"><img class="text_black" src="./images/Logos/social_itchio.svg" alt="Itch.io"></a>
-            <a class="topSocial" href="https://www.linkedin.com/in/joni-suojanen/" target="_blank"><img src="./images/Logos/social_linkedin.svg" alt="Linkedin"></a>
-            <a class="topSocial" href="mailto:joni.j.suojanen@gmail.com"><img src="./images/Logos/social_mail.svg" alt="email"></a>
-            
-        </div>
-        <label>js copy</label>
+    <footer id="footerlink" class=" w3-container centered">
+
+        <p>Copyright &copy;2024; Programmed by <span class="designer"> Joni Suojanen</span></p>
+
     </footer>
 </body>
 

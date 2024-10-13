@@ -50,6 +50,7 @@
 
   --topnav-text: 2rem;
   --topnav-color: #19262f;
+  --hero-text-color:#ffff;
   --page-backgroundcolor: #b8e0d2;
   --cardborder-color: hsla(207, 94%, 27%, 0.5);
   --font-family: "Poppins";
@@ -62,46 +63,12 @@ section {
 }
 
 header h1 {
-  color: var(--topnavtext-text-color);
-  font-size: var(--topnav-text);
-}
-
-h1 {
-  font-family: var(--font-family), sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 2rem;
   color: var(--text-color);
-  text-transform: capitalize;
+  font-size: var(--topnav-text);
 }
 
 #top h1 {
   margin: 12px 0 14 px 0;
-  /* arvot kellonsuuntaisesti: ylös oikea alas vasen */
-}
-
-h2 {
-  font-family: var(--font-family), sans-serif;
-  font-size: 2.5rem;
-  font-weight: 700;
-  font-style: normal;
-  text-transform: uppercase;
-  color: var(--text-color);
-}
-
-
-h3 {
-  font-weight: 500;
-  font-size: 2rem;
-  color: var(--text-color);
-}
-
-p,li,ul {
-  font-weight: 400;
-  font-size: 1rem;
-  color: var(--text-color);
-  text-transform: none;
-  
 }
 
 #top p {
@@ -116,9 +83,8 @@ html {
 body {
   font-family: var(--font-family), sans-serif;
   font-kerning: normal;
-  font-weight: 600;
   line-height: 1.5;
-  color: var(--text-color);
+
   background-color: var(--background-color);
 
   /* background-image: linear-gradient(var(--gradient-color)); */
@@ -131,29 +97,57 @@ html {
   scroll-behavior: smooth;
 }
 
-/* The hero image */
-.hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  /* background-image: linear-gradient(rgba(255, 193, 231, 0.301), rgba(36, 3, 3, 0.5)), url("../images/Test.jpeg"); */
-
-  /* Set a specific height */
-  height: 30vh;
-
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+#hero
+{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  bottom: 0;
 }
 
-/* Place text in the middle of the image */
-.hero-text {
-  text-align: right;
+
+#hero video
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   position: absolute;
-  top: 15vh;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+/* black tint on video */
+#hero::after{
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+
+#hero h1
+{
+  font-size: 2rem;
+}
+#hero .homenav, a
+{
+  background-color: none;
+  text-decoration: none;
+  color: var(--hero-text-color);
+  font-size: var(--topnav-text);
+
+}
+
+.block
+{
+  display: inline-block;
 }
 
 /* Header */
@@ -161,12 +155,7 @@ html {
 footer {
   min-height: calc(100vh-100px);
   overflow: hidden;
-}
-
-.footerbox {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  background-color: var(--topnav-color);
 }
 
 /* NAV BAR */
@@ -174,11 +163,13 @@ footer {
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: var(--topnav-color);
-  border-color: var(--cardborder-color);
-  /* background-image: linear-gradient(var(--gradient-color)); */
   min-height: calc(5rem);
   overflow: hidden;
-  /* box-shadow: 0 0px 500px 500px var(--body-bg); */
+}
+
+.top-coloured{
+  background-color: var(--topnav-color);
+  border-color: var(--cardborder-color); 
 }
 
 .topnav p {
@@ -236,14 +227,6 @@ footer {
   display: none;
 }
 
-.topSocial {
-  width: 5rem;
-  height: 5rem;
-  float: left;
-  text-align: left;
-  padding: 0.5em;
-  display: none;
-}
 
 /* Alignments */
 
@@ -286,6 +269,19 @@ footer {
 }
 #orange {
   background-color: rgb(204, 156, 92);
+}
+
+#black
+{
+  fill: black;
+}
+#white
+{
+  fill: white;
+}
+
+svg{
+  fill: #ffffff
 }
 
 .card {
@@ -367,7 +363,6 @@ footer {
 .points {
   float: left;
   text-align: left;
-  line-height: 3vh;
 }
 
 .title {
@@ -425,7 +420,6 @@ footer {
   height: 5rem;
   text-align: center;
   background-position-x: center;
-  background-color: var(--topnav-color);
   border-radius: 0%;
 
   -webkit-transition-duration: 0.4s;
@@ -438,12 +432,14 @@ footer {
 
 .socialbutton:hover {
   /* background-color: var(--complimentary-color); */
-  color: rgba(0, 0, 0, 1);
   transform: scale(1.1);
 }
 
 #footerlink {
   background-color: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 /* Content */
@@ -578,7 +574,7 @@ img {
   overflow: hidden;
   width: 100%;
   padding-top: 56.25%;
-  /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  /* 16:9 Aspect Ratio (divide 9 by 16   0.5625) */
 }
 
 /* Then style the iframe to fit in the container div with full height and width */
@@ -598,14 +594,31 @@ img {
 }
 
 /* Extra small devices (phones, 600px and down) */
+
 @media only screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
+
+  #hero .topnav a
+  {
+    font-size: 1.2rem;
+  }
+  .topnav a{
     display: none;
   }
+  /* Place text in the middle of the image */
+.hero-text {
+  position: relative;
+  bottom: 0;
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  z-index: 15;
+  padding-bottom: 5%;
+}
 
-  header {
-    margin: 0.5rem;
-  }
 
 }
 
@@ -616,6 +629,13 @@ img {
 
 .topnav.responsive {
   position: relative;
+  background-color: var(--topnav-color);
+  
+}
+
+.topnav.responsive p
+{
+  display: none;
 }
 
 .topnav.responsive a.icon {
@@ -623,24 +643,32 @@ img {
   right: 0;
   top: 0;
 }
-
-.topnav.responsive a {
+.topnav.responsive a
+{
   float: none;
   display: block;
-  text-align: left;
+  text-align: center;
+}
+.topnav.responsive .left
+{
+  float: none;
+  display:block ruby;
 }
 
 .topnav.responsive h1 {
   display: none;
 }
 
+.topSocial {
+  width: 4rem;
+  height: 4rem;
+  float: inline-start;
+  padding: 0.5em;
+}
+
 
 .botnav a:not(:first-child) {
   display: none;
-}
-
-header {
-  margin: 0.5rem;
 }
 
 .botnav a.icon {
@@ -724,7 +752,6 @@ section {
 @media only screen and (min-width: 600px) {
   .responsive {
     width: 100%;
-    font-size: 1.5vw;
   }
 
   .button {
@@ -734,9 +761,7 @@ section {
     line-height: 3rem;
   }
 
-  .topSocial {
-    display: none;
-  }
+
 
   .flex {
     display: block;
@@ -765,6 +790,18 @@ section {
     width: 100%;
     height: 40rem;
   }
+  
+  footer p
+  {
+    font-size: 0.75rem;
+    color: white;
+  }
+  
+  .designer
+  {
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -773,6 +810,19 @@ section {
     width: 100%;
   }
 
+
+  .hero-text {
+    position: absolute;
+    bottom: 0;
+    display:flex;
+    flex-direction:none;
+    
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 15;
+    padding-bottom: 10%;
+  }
   .button {
     width: 15rem;
     font-size: 2rem;
@@ -789,10 +839,6 @@ section {
     align-items: center;
   }
 
-  .topSocial {
-    display: none;
-  }
-
   .card {
     font-size: 1rem;
     padding: 2rem;
@@ -805,7 +851,19 @@ section {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1024px) {
   /* For desktop: */
-
+  .hero-text {
+    position: absolute;
+    bottom: 0;
+    display:flex;
+    flex-direction: none;
+    gap:2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    z-index: 15;
+    padding-bottom: 5%;
+  }
   .col-1 {
     width: 100%;
   }

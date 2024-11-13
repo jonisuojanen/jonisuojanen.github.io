@@ -302,9 +302,6 @@ svg{
   align-items: center;
 }
 
-.textBox{
-  text-align: center;
-}
 
 .tile
 {
@@ -325,7 +322,7 @@ svg{
 .projectcard h2 {
   font-size: 1.5rem;
   font-weight: bold;
-}
+text-transform: uppercase;}
 
 .card h2 {
   font-size: 2rem;
@@ -697,7 +694,9 @@ img {
 
 .button {
   font-size: 8vw;
+  margin-bottom: 10px;
 }
+
 
 .socialbutton {
   border-radius: 0em;
@@ -753,11 +752,17 @@ section {
     width: 100%;
   }
 
+  .projectcard h2
+  {
+    text-align: left;
+  }
+
   .button {
     width: 5rem;
     height: 5rem;
     font-size: 2vw;
     line-height: 3rem;
+
   }
 
 
@@ -946,6 +951,10 @@ section {
     max-width: 1600px;
     padding-top: 0%;
   }
+  .projectcard h2
+  {
+    text-align: center;
+  }
 
   .textBox{
     text-align: left;
@@ -956,6 +965,7 @@ section {
     width: 10rem;
     height: 3rem;
     font-size: 1rem;
+    margin-bottom: none;
   }
 
   .socialbutton {

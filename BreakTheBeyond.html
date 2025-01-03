@@ -29,12 +29,12 @@
             <a href="./index.html#toAbout">About</a>
             <a href="/index.html">Portfolio</a>
             <div class="left">
-                    <a class="topSocial socialbutton" href="mailto:joni.j.suojanen@gmail.com"><img src="./images/Logos/social_mail.svg"
-                    alt="email"></a>
-                    <a class="topSocial socialbutton" href="https://www.linkedin.com/in/joni-suojanen/" target="_blank"><img
+                <a class="topSocial socialbutton" href="mailto:joni.j.suojanen@gmail.com"><img
+                        src="./images/Logos/social_mail.svg" alt="email"></a>
+                <a class="topSocial socialbutton" href="https://www.linkedin.com/in/joni-suojanen/" target="_blank"><img
                         src="./images/Logos/social_linkedin.svg" alt="Linkedin"></a>
-                    <a  class="topSocial socialbutton" href="https://shelter-games.itch.io/" target="_blank"><img
-                    src="./images/Logos/social_itchio.svg" alt="Itch.io"></a>
+                <a class="topSocial socialbutton" href="https://shelter-games.itch.io/" target="_blank"><img
+                        src="./images/Logos/social_itchio.svg" alt="Itch.io"></a>
 
             </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -49,211 +49,194 @@
     <!-- Project Text Starts here -->
 
 
-        <header class="centered">
-            <h1 id="TOP">Break The Beyond</h1>
-        </header>
-
-
-    <section class=" centered">
-        <div class="margin">
+    <header class="centered">
+        <h1 id="TOP">Break The Beyond</h1>
+    </header>
 
 
 
-            <div>
-                <h3>Break The Beyond is a fantasy roguelite card game with merge elements.</h3>
-                <p>Immerse yourself in an exciting adventure where
-                    you fight enemies, collect and merge items to enhance their power.
-                <p>
-                    <a href="https://play.google.com/store/apps/details?id=com.Latchback.BtB" target="_blank"><img
-                            class="badge" src="./images/Logos/google-play-badge.png" alt="Google Play Store"></a>
+    <article class=" margin">
+        <!-- Card 1 -->
+        <div>
+            <div style="padding: 1%;" class="col-6 ">
+
+                <div class="iframecontainer">
+                    <iframe class="responsive-iframe"
+                        src="https://www.youtube.com/embed/94ckd0uQLxc?si=v133Ib1IJ_DcJkwZ" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+                <p class="description left"> Game Trailer</p>
+
             </div>
 
+            <div style="padding: 1%;" class="col-6">
+                <div class="iframecontainer">
+                    <iframe class="responsive-iframe " src="https://youtube.com/embed/a5eQdUyNODs" frameborder="0"
+                        allowfullscreen></iframe>
+
+                </div>
+                <p class="description left"> Gameplay Video</p>
+            </div>
+        </div>
+        <!-- END -->
+    </article>
+
+
+    <br>
+    <br>
+    <!-- Two -->
+
+
+
+    <br>
+    <br>
+
+    <article class="margin">
+        <div class="col-5">
+            <h3>System Design</h3>
+            <p>I was a system oriented designer in the team, and took responsibility in designing how some of the new
+                features worked in game. I also worked in the games first skill tree for the games only hero card at the
+                time, the wanderer.
+                I also worked on the following features which exist in the game:
+            </p>
+            <p class="points">
+                <li>Daily rewards and extra lives once per day</li>
+                <li>Player inventory</li>
+                <li>Roguelite relics system, player can gain rewards that they lose if they die</li>
+                <li>Swapping items - Player can swap items during a looting phase of a run</li>
+            </p>
+            <h3 class="">Document Creation</h3>
+            <p>
+                I aimed to create clear and visual documentation for programmers and artists.
+                I gathered feedback of documentation regularly in order to adapt to the teams preferred
+                style. Keeping people up to date was important because many of the team members were remote, so I always
+                gave a short
+                update on main points of documentation.</p>
+
+            <p> The project utilised a spreadsheet to unity workflow (.csv) in maintaining the stats, meaning enemy
+                stats would be
+                easily transferred from spreadsheets into unity for a faster workflow.
+                For more situational features I created quick prototypes using Figma. I also
+                occasionally programmed prototypes using Unity C# to illustrate the game feel better on
+                major changes to a feature.</p>
+        </div>
+        </div>
+        <div class="row col-5 gap">
+            <embed class="embedDoc " src="./docs/Swap mechanic.pdf" type="application/pdf">
+            <a class="button" target="_blank" href="./docs/Swap mechanic.pdf">Full View</a>
+        </div>
+    </article>
+
+    <br><br>
+    <article class="margin row">
+        <br><br>
+        <h3>Swap Mechanic</h3>
+        <div class="col-4 row">
+            
+            <h4>Problem</h4>
+            <p>According to player feedback, players wanted to discard cards from hand in order to have more freedom in
+                their playstyle. At the time when player would defeat an enemy and the loot was revealed, they couldn't
+                discard cards already in their hand, limiting the amount of loot they can gather.</p>
+
+            <h4>Solution</h4>
+            <p>Instead of just discarding cards into the void, player could swap them while in the looting phase. To
+                keep the flow of interaction and to prevent players discarding items by accident during gameplay, we
+                opted towards a swapping mechanism instead.
+                Player could exchange new cards between loot and hand, giving the possibility to reiterate on their
+                choice and strategy according to the visible enemy cards in the background. Player could only swap new
+                cards during a battle, but could change their hand fully in a treasure room.</p>
+
+            <h4>Conclusion</h4>
+            <p>In retrospective the feature was a good addition, as it allowed meaningful decision making, and showed
+                the importance of game flow. It was a challenge to keep things simple and understandable, but in the end
+                the feature came out good.
+            </p>
+        </div>
+        <div class="col-4 gap">
+            <img class="" src="./images/BreaktheBeyond/Swap mechanic.gif" alt="">
         </div>
 
-        <section class="margin">
-            <div class="iframecontainer">
-                <iframe class="responsive-iframe" src="https://youtube.com/embed/94ckd0uQLxc?si=v133Ib1IJ_DcJkwZ"
-                    frameborder="0" allowfullscreen></iframe>
-            </div>
-        </section>
+
+    </article>
+
+    <article class="margin">
+        <div class="col-12">
+            <h4>Prototyping</h4>
+            <p>Sometimes a prototype using assets was more clear than any documentation. Here is an example of an
+                in-game shop example, which did not make it to the game.
+            </p>
+        </div>
+
+        <div class="iframecontainer">
+            <iframe class="responsive-iframe" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+                src="https://embed.figma.com/proto/sRfb75O3Fda4RoDYWxTFzI/Ingame-Store?node-id=1-4&starting-point-node-id=1%3A4&embed-host=share"
+                allowfullscreen></iframe>
+        </div>
+    </article>
 
 
-        <br><br>
+    <br><br>
 
-        <section class=" margin">
-            <!-- Card 1 -->
-            <div class="row">
-                <div class="col-12 card">
-                    <div class="col-6 points ">
-                        <h3 class=" row">Overview</h3>
-                        <div class="">
-                            <p><strong>My contributions as game designer:</strong></p>
-                            <li>Writing Game Design Documentation.</li>
-                            <li>Balancing early game economy in Google Sheets.</li>
-                            <li>Creating test cases and test plans.</li>
-                            <li>Prototyping and testing some mechanics.</li>
-                            <li>Identifying and reporting bugs.</li>
-                            <li>Wrote my bachelors thesis on balancing and testing the skilltree.</li>
-                        </div>
+    <section class="margin">
+        <!-- Card 1 -->
+        <div class="row">
+            <div class="card col-12">
+                <h3 class="">BALANCING AND TESTING <br>A SKILL-BASED-PROGRESSION SYSTEM IN A MOBILE
+                    CARD GAME </h3>
+                <div class="col-6">
 
-                    </div>
-
-                    <div class="col-6">
-                        <div class="iframecontainer">
-                            <iframe class="responsive-iframe " src="https://youtube.com/embed/a5eQdUyNODs"
-                                frameborder="0" allowfullscreen></iframe>
-
-                        </div>
-                        <p class="description left"> Gameplay Video</p>
-                    </div>
-
-                </div>
-
-            </div>
-            <!-- END -->
-        </section>
-
-
-        <br>
-        <br>
-        <!-- Two -->
-
-        <section class="margin">
-            <!-- Card 1 -->
-            <div class="row card">
-                <div class="col-12">
-
-                    <div class="col-6 points">
-                        <h3 class=" row">Swap Mechanic</h3>
-
-                        <p class=" row">As the game is not a deck-type card game, attaining cards and consuming them
-                            is very important. According to feedback players wanted to discard cards to make space in
-                            hand. This would have changed the game completely, taking the game in a direction the team
-                            did not wish to take.
-                        </p>
-                        <p>
-                            Swap allowed meaningful decisions without causing damage to the difficulty curve of the
-                            game. Each loot card that can be moved has a spinning indicator on it. We designed a partial
-                            swap for regular loot drops and a full swap in bigger rewards like opening treasure chests.
-                        </p>
-                        <p>
-                            Swap gave players the choice to affect their hand but also gave a better user experience overall. In later stages of development it also allowed to plan ahead of future opponents.
-
-                        </p>
-
-
-                        <img class="cropped" src="./images/BreaktheBeyond/Swap mechanic.gif" alt="">
-
-                    </div row>
-                    <div class="col-6 centered">
-                        <img class="chart" src="./images/Charts/Swap mechanic.png" alt="Swap chart">
-                    </div>
-                </div>
-            </div>
-            <!-- END -->
-        </section>
-
-        <br>
-        <br>
-
-        <section class="margin">
-            <!-- Card 1 -->
-            <div class="row">
-                <div class="card col-12">
-                    <div class="col-6">
-                        <h3 class="left">Document Creation</h3>
-
-                        <div class="points responsive">
-                            <p><strong>Tools</strong></p>
-
-                            <li>Google Sheets / Docs</li>
-                            <li>Draw.io</li>
-                            <li>Figma</li>
-                            <p>
-                                I aimed to create clear and visual documentation for the project.I
-                                gathered feedback of documentation regularly in order to adapt to the teams preferred
-                                style. Keeping people up to date was important because many of the team members were remote, so I always gave a short
-                                update on main
-                                points of documentation.</p>
-                                
-                                <p> The project utilised a spreadsheet to unity workflow (.csv) in maintaining the stats, meaning enemy stats would be
-                                    easily transferred from spreadsheets into unity for a faster workflow.
-                                    For more situational features I created quick prototypes using Figma. I also
-                                    occasionally programmed prototypes using Unity C# to illustrate the game feel better on
-                                    major changes to a feature.</p>
-                        </div>
-                    </div>
-                    <div class="col-1"></div>
-                    <div class="row col-5">
-                        <embed class="embedDoc" src="./docs/Swap mechanic.pdf" type="application/pdf">
-                        <a class="button" target="_blank" href="./docs/Swap mechanic.pdf">Full View</a>
-                    </div>
-                </div>
-            </div>
-            <!-- END -->
-        </section>
-
-        <br><br>
-
-        <section class="margin">
-            <!-- Card 1 -->
-            <div class="row">
-                <div class="card col-12">
-                    <div class="col-6">
-                        <h3 class=" centered">BALANCING AND TESTING <br>A SKILL-BASED-PROGRESSION SYSTEM IN A MOBILE
-                            CARD GAME </h3>
-
-                            <p>
-                                I researched player motivation and Break the beyonds skill tree as part of my thesis. The main goal of the research was to gather data and possible improvement points in the system, and to gather data on player behaviour during soft launch.
-                                <br><br>
-                                I also wanted to learn different aspects of balancing games by learning from different academic sources in the industry.
-                                <br><br>
-                                I also wanted to learn and utilize modern testing methods to understand players progression during the game.
-                                <br><br>
-                                I performed 2 playtest sessions and an online gameplay diary to understand players behaviour better and to analyze possible points of improvement.
-                            </p>
-                            <br>
-                            <p></p>
-
-                    </div>
-                    <div class="col-1"></div>
-                    <div class="row col-5">
-
-                        <img src="./images/BreaktheBeyond/BTB.gif" alt="Skilltree - Break the Beyond">
+                    <p>
+                        I researched player motivation and Break the beyonds skill tree as part of my thesis. The main
+                        goal of the research was to gather data and possible improvement points in the system, and to
+                        gather data on player behaviour during soft launch.
                         <br><br>
-                        <br>
-                        <div class="row centered">
-                            <a href="https://urn.fi/URN:NBN:fi:amk-2023120835288" target="_blank"
-                                class="button">Thesis</a>
-                        </div>
-
-
+                        I also wanted to learn different aspects of balancing games by learning from different academic
+                        sources in the industry.
+                        <br><br>
+                        I also wanted to learn and utilize modern testing methods to understand players progression
+                        during the game.
+                        <br><br>
+                        I performed 2 playtest sessions and an online gameplay diary to understand players behaviour
+                        better and to analyze possible points of improvement.
+                    </p>
+                    <div class="row centered">
+                        <a href="https://urn.fi/URN:NBN:fi:amk-2023120835288" target="_blank" class="button">Thesis</a>
                     </div>
-                </div>
-            </div>
-            <!-- END -->
-        </section>
 
+                    <br>
+                    <p></p>
+
+                </div>
+                <div class="col-6 gap">
+
+                    <img src="./images/BreaktheBeyond/BTB.gif" alt="Skilltree - Break the Beyond">
+                </div>
+
+            </div>
+        </div>
+        <!-- END -->
+    </section>
 
 
 
 
     </section>
+
     <br>
     <br>
     </section>
 
     <!-- FOOTER -->
 
-    <footer class="  topnav w3-container">
+    <footer class="  botnav">
         <!-- Right -->
-        <a style="text-align: center;" class="col-4" href="./Project1.html">Slippy Slope</a>
+        <a style="text-align: center;" class="col-4" href="./Project2.html">Wizard Defense</a>
 
         <!-- Middle -->
         <a style="text-align: center;" class="col-4" href="#TOP">To The Top</a>
 
         <!-- Left -->
-        <a style="text-align: center;" class="col-4" style="float: left;" href="./index.html">Portfolio</a>
+        <a style="text-align: center;" class="col-4" style="float: left;" href="/Project3.html">Projects</a>
 
         </div>
     </footer>

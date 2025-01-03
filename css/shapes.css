@@ -26,6 +26,7 @@
   --skew-angle: -5deg;
   position: relative;
   isolation: isolate;
+  
 }
 
 .diagonal::after {
